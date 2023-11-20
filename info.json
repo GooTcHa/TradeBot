@@ -1,0 +1,3306 @@
+{
+    "25744520646": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "25744520646",
+        "classid": "2532234329",
+        "instanceid": "480085569",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "25744520646",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopujwezhjxszYI2gS09-vloWZlOX7MITdn2xZ_Isi07_F8N3x3Qfj8kQ6a2H0IdKXdgRqYA2C-VLqxLznhMLv6Z-bm3o2pGB8sr9Yt3dq",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopujwezhjxszYI2gS09-vloWZlOX7MITdn2xZ_Pp9i_vG8MKm0QKwrkI4Zmr0LYHDeg45ZAzS_lPqwLu9hpXouc_ByCYw7yJwt3eIgVXp1mgrQle0",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Minimal Wear"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "A low-recoil firearm with a high rate of fire, the P250 is a relatively inexpensive choice against armored opponents. It has been custom painted with a green, mechanized croc with yellow detailing.\n\n<i>In a while\u2026</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Spectrum 2 Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6651315203108468528A%assetid%D14187656070743598912",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "P250 | See Ya Later",
+        "name_color": "D2D2D2",
+        "type": "Covert Pistol",
+        "market_name": "P250 | See Ya Later (Minimal Wear)",
+        "market_hash_name": "P250 | See Ya Later (Minimal Wear)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6651315203108468528A%assetid%D14187656070743598912",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34474820715": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34474820715",
+        "classid": "5199657698",
+        "instanceid": "188530139",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34474820715",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJegJK6d2yq5ODmOPLO7TdmVRc7cF4n-SP94il0FXhrkVuNzv2ctCSJgJvN1rXq1S8wOi8gMC0vZnJmiE1uHIitGGdwUJoTWKVRQ",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJegJK6d2yq5ODmOPLO7TdmVRc7cF4n-T--Y3nj1H6qUZkZ2z3LYKdJwY5aV_S8wXqkubmgJa8vpmdnCAxvigq5XiLlkS_0gYMMLLXGcO_ug",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Well-Worn"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. It is most deadly in short, controlled bursts of fire. It has been custom painted with a \"HEAD SHOT GUN\" graffiti and finished with pearlescent coating.\n\n<i>Everyone has goals, but are you willing to put in the work to achieve them? - Booth, Arms Dealer</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Revolution Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6307915730760451997A%assetid%D181978265918385083",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "AK-47 | Head Shot",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "AK-47 | Head Shot (Well-Worn)",
+        "market_hash_name": "AK-47 | Head Shot (Well-Worn)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6307915730760451997A%assetid%D181978265918385083",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "30270785597": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "30270785597",
+        "classid": "5249919172",
+        "instanceid": "188530139",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "30270785597",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposr-kLAtl7PDdTjlH7du6kb-AnuP3O4Tck29Y_cg_3OvC8Nyj2AHi8xFsYG76JI_BIQM3ZF3U_QXtxLi5h5LvuJXPy3UyuD5iuyh1arArOw",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposr-kLAtl7PDdTjlH7du6kb-AnuP3O4Tck29Y_chOhujT8om73la3rkNqY2z1LNSVcQE3YVGEqVS3xOvrgsLvucufy3Ywvigk53iMnQv3309M6CGBEg",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Well-Worn"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "As expensive as it is powerful, the Desert Eagle is an iconic pistol that is difficult to master but surprisingly accurate at long range. It has been custom painted using oversaturated colors and different shapes.\n\n<i>Can't miss\u2014both the colors and when using the weapon</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Operation Riptide Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "<br><div id=\"sticker_info\" name=\"sticker_info\" title=\"Sticker\" style=\"border: 2px solid rgb(102, 102, 102); border-radius: 6px; width=100; margin:4px; padding:8px;\"><center><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/community2022/street_artist_glitter.da23d5efea044dfd36cce81b5f0619c49da91737.png\"><br>Sticker: Street Artist (Glitter)</center></div>"
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6141282544551726710A%assetid%D14289374528007990921",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "Desert Eagle | Ocean Drive",
+        "name_color": "D2D2D2",
+        "type": "Covert Pistol",
+        "market_name": "Desert Eagle | Ocean Drive (Well-Worn)",
+        "market_hash_name": "Desert Eagle | Ocean Drive (Well-Worn)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6141282544551726710A%assetid%D14289374528007990921",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34581791241": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34581791241",
+        "classid": "5620972495",
+        "instanceid": "188530139",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34581791241",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09C5goW0mvLwOq7c2D0G7JdzjLyV9Nj02lbhqRY-MGincdSQIFM4Z13U_Vfqxezu05W778nXiSw0A_07KVM",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09C5goW0mvLwOq7cqWdQ-sJ0xL-W8d73jgHgqkc9YTv2dtPHIQdqNArVqAS4x-vrgpDouJ_In3Fk6XQ8pSGKknEaNsA",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Well-Worn"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. It has been custom painted using neon colors and covered with hand-drawn designs.\n\n<i>Fight for one, fight for all</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Snakebite Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "<br><div id=\"sticker_info\" name=\"sticker_info\" title=\"Sticker\" style=\"border: 2px solid rgb(102, 102, 102); border-radius: 6px; width=100; margin:4px; padding:8px;\"><center><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/rmr2020/thv.73f936351ca7b2314dc3651106688990f008e765.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/rmr2020/thv.73f936351ca7b2314dc3651106688990f008e765.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/rmr2020/thv.73f936351ca7b2314dc3651106688990f008e765.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/rmr2020/thv.73f936351ca7b2314dc3651106688990f008e765.png\"><br>Sticker: 100 Thieves | 2020 RMR, 100 Thieves | 2020 RMR, 100 Thieves | 2020 RMR, 100 Thieves | 2020 RMR</center></div>"
+            }
+        ],
+        "tradable": 0,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6141282544550047460A%assetid%D7082695620077259456",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A4 | In Living Color",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A4 | In Living Color (Well-Worn)",
+        "market_hash_name": "M4A4 | In Living Color (Well-Worn)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6141282544550047460A%assetid%D7082695620077259456",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34584025715": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34584025715",
+        "classid": "5618479769",
+        "instanceid": "188530139",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34584025715",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09C5goW0mvLwOq7c2D0G7JdzjLyV9Nj02lbhqRY-MGincdSQIFM4Z13U_Vfqxezu05W778nXiSw0A_07KVM",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09C5goW0mvLwOq7cqWdQ-sJ0xL-W8d73jgHgqkc9YTv2dtPHIQdqNArVqAS4x-vrgpDouJ_In3Fk6XQ8pSGKknEaNsA",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Well-Worn"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. It has been custom painted using neon colors and covered with hand-drawn designs.\n\n<i>Fight for one, fight for all</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Snakebite Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "<br><div id=\"sticker_info\" name=\"sticker_info\" title=\"Sticker\" style=\"border: 2px solid rgb(102, 102, 102); border-radius: 6px; width=100; margin:4px; padding:8px;\"><center><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/antwerp2022/cope.56202736d91481d551070bbd719b293f5d15ee3d.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/paris2023/sig_torzsi.37afa76caade10431bbb72341675df9d65b35ddd.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/paris2023/flux.1417979ad90aef93e6a5dd60cd117d7b1c57a63a.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/antwerp2022/cope.56202736d91481d551070bbd719b293f5d15ee3d.png\"><br>Sticker: Copenhagen Flames | Antwerp 2022, torzsi | Paris 2023, Fluxo | Paris 2023, Copenhagen Flames | Antwerp 2022</center></div>"
+            }
+        ],
+        "tradable": 0,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6651315203108034458A%assetid%D3207871955425266376",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A4 | In Living Color",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A4 | In Living Color (Well-Worn)",
+        "market_hash_name": "M4A4 | In Living Color (Well-Worn)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6651315203108034458A%assetid%D3207871955425266376",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34490035605": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34490035605",
+        "classid": "5613110953",
+        "instanceid": "480085569",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34490035605",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09C5goW0mvLwOq7c2D0G7JdzjLyV9Nj02lbhqRY-MGincdSQIFM4Z13U_Vfqxezu05W778nXiSw0A_07KVM",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09C5goW0mvLwOq7cqWdQ-sJ0xL-W8d73jgHgqkc9YTv2dtPHIQdqNArVqAS4x-vrgpDouJ_In3Fk6XQ8pSGKknEaNsA",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Well-Worn"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. It has been custom painted using neon colors and covered with hand-drawn designs.\n\n<i>Fight for one, fight for all</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Snakebite Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 0,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6474548917357693225A%assetid%D16728093385307303106",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A4 | In Living Color",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A4 | In Living Color (Well-Worn)",
+        "market_hash_name": "M4A4 | In Living Color (Well-Worn)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6474548917357693225A%assetid%D16728093385307303106",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34584503436": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34584503436",
+        "classid": "5616707299",
+        "instanceid": "480085569",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34584503436",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhnwMzFJTwW08y_m46OkuXLPr7Vn35cpp0m2b-Xo92s3Ffj_Epkazzzd4KcelRvYlzQ-lC8x-q8gsDvu5-fnSZ9-n51hKpk1bE",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhnwMzFJTwW08y_m46OkuXLPr7Vn35c18lwmO7Eu9Si2wLi_UJlZzr0I4-delM-MlzZ8gPvwurvhZe-upmaziQwvSJ0sSvD30vg2FiWm-E",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. All corners have been cut off the receipt of purchase.\n\n<i>Beware those who speak of the watchtower</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Wildfire Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 0,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921080613566A%assetid%D11567606016582183490",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A4 | The Battlestar",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A4 | The Battlestar (Field-Tested)",
+        "market_hash_name": "M4A4 | The Battlestar (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921080613566A%assetid%D11567606016582183490",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "33842472815": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "33842472815",
+        "classid": "1560558873",
+        "instanceid": "188530139",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "33842472815",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhnwMzFJTwW08y_m46OkuXLPr7Vn35cpp0m2b-Xo92s3Ffj_Epkazzzd4KcelRvYlzQ-lC8x-q8gsDvu5-fnSZ9-n51hKpk1bE",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhnwMzFJTwW08y_m46OkuXLPr7Vn35c18lwmO7Eu9Si2wLi_UJlZzr0I4-delM-MlzZ8gPvwurvhZe-upmaziQwvSJ0sSvD30vg2FiWm-E",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. All corners have been cut off the receipt of purchase.\n\n<i>Beware those who speak of the watchtower</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Wildfire Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6922657081154905841A%assetid%D12451960564174809294",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A4 | The Battlestar",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A4 | The Battlestar (Field-Tested)",
+        "market_hash_name": "M4A4 | The Battlestar (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6922657081154905841A%assetid%D12451960564174809294",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34583528819": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34583528819",
+        "classid": "5621149206",
+        "instanceid": "302028390",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34583528819",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFAZh7PXJdTh94czhq42Ok_7hPvWJlT8A68cm3rCVptqs2FWy-UdvN277ItOddgRvaQqD_1K8xOjmgpXvot2XnlNr9XKF",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFAZh7PXJdTh94czhq42Ok_7hPoTdl3lW7Yspib2Q9o6i3A3g-EVlYzilJoKWJgE2Zw3Y_lPvyby8gJW-uZvAznEwpGB8svCSNRWD",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Versatile but expensive, the German-made MP7 SMG is the perfect choice for high-impact close-range combat. It has been painted by airbrushing transparent paints that fade together over a chrome base coat.\n\n<i>This isn't just a weapon, it's a conversation piece - Imogen, Arms Dealer In Training</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The 2018 Inferno Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "<br><div id=\"sticker_info\" name=\"sticker_info\" title=\"Sticker\" style=\"border: 2px solid rgb(102, 102, 102); border-radius: 6px; width=100; margin:4px; padding:8px;\"><center><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/rmr2020/nor.69c9009c9689fcf152d2becb175f63c586f5fbb8.png\"><br>Sticker: North | 2020 RMR</center></div>"
+            }
+        ],
+        "tradable": 0,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6307915730759389637A%assetid%D14899295195789314275",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "MP7 | Fade",
+        "name_color": "D2D2D2",
+        "type": "Restricted SMG",
+        "market_name": "MP7 | Fade (Field-Tested)",
+        "market_hash_name": "MP7 | Fade (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6307915730759389637A%assetid%D14899295195789314275",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34582212030": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34582212030",
+        "classid": "5621009701",
+        "instanceid": "302028390",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34582212030",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFAZh7PXJdTh94czhq42Ok_7hPvWJlT8A68cm3rCVptqs2FWy-UdvN277ItOddgRvaQqD_1K8xOjmgpXvot2XnlNr9XKF",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFAZh7PXJdTh94czhq42Ok_7hPoTdl3lW7Yspib2Q9o6i3A3g-EVlYzilJoKWJgE2Zw3Y_lPvyby8gJW-uZvAznEwpGB8svCSNRWD",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Versatile but expensive, the German-made MP7 SMG is the perfect choice for high-impact close-range combat. It has been painted by airbrushing transparent paints that fade together over a chrome base coat.\n\n<i>This isn't just a weapon, it's a conversation piece - Imogen, Arms Dealer In Training</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The 2018 Inferno Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 0,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M7119689565251762487A%assetid%D622668863551874223",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "MP7 | Fade",
+        "name_color": "D2D2D2",
+        "type": "Restricted SMG",
+        "market_name": "MP7 | Fade (Field-Tested)",
+        "market_hash_name": "MP7 | Fade (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M7119689565251762487A%assetid%D622668863551874223",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34583440083": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34583440083",
+        "classid": "5621009701",
+        "instanceid": "302028390",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34583440083",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFAZh7PXJdTh94czhq42Ok_7hPvWJlT8A68cm3rCVptqs2FWy-UdvN277ItOddgRvaQqD_1K8xOjmgpXvot2XnlNr9XKF",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFAZh7PXJdTh94czhq42Ok_7hPoTdl3lW7Yspib2Q9o6i3A3g-EVlYzilJoKWJgE2Zw3Y_lPvyby8gJW-uZvAznEwpGB8svCSNRWD",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Versatile but expensive, the German-made MP7 SMG is the perfect choice for high-impact close-range combat. It has been painted by airbrushing transparent paints that fade together over a chrome base coat.\n\n<i>This isn't just a weapon, it's a conversation piece - Imogen, Arms Dealer In Training</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The 2018 Inferno Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 0,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6307915730759343557A%assetid%D622668863551874223",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "MP7 | Fade",
+        "name_color": "D2D2D2",
+        "type": "Restricted SMG",
+        "market_name": "MP7 | Fade (Field-Tested)",
+        "market_hash_name": "MP7 | Fade (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6307915730759343557A%assetid%D622668863551874223",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34583468528": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34583468528",
+        "classid": "5621009701",
+        "instanceid": "302028390",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34583468528",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFAZh7PXJdTh94czhq42Ok_7hPvWJlT8A68cm3rCVptqs2FWy-UdvN277ItOddgRvaQqD_1K8xOjmgpXvot2XnlNr9XKF",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFAZh7PXJdTh94czhq42Ok_7hPoTdl3lW7Yspib2Q9o6i3A3g-EVlYzilJoKWJgE2Zw3Y_lPvyby8gJW-uZvAznEwpGB8svCSNRWD",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Versatile but expensive, the German-made MP7 SMG is the perfect choice for high-impact close-range combat. It has been painted by airbrushing transparent paints that fade together over a chrome base coat.\n\n<i>This isn't just a weapon, it's a conversation piece - Imogen, Arms Dealer In Training</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The 2018 Inferno Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 0,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6307915730759347277A%assetid%D622668863551874223",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "MP7 | Fade",
+        "name_color": "D2D2D2",
+        "type": "Restricted SMG",
+        "market_name": "MP7 | Fade (Field-Tested)",
+        "market_hash_name": "MP7 | Fade (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6307915730759347277A%assetid%D622668863551874223",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34580407935": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34580407935",
+        "classid": "5619945642",
+        "instanceid": "480085569",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34580407935",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alIITCmX5d_MR6j_v-_Yn0nk36_xFkNTv0JIeSIwJraAvY_1m3x-y5jcTv7cvMmyA3s3MnsHfcn0C1hQYMMLIwCAuYbA",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alIITCmX5d_MR6j_v-_Yn0nk2LpxIuNDztINSdJFQ5YVnXq1XryL3ngJ61up-fwSAw63Ynty2Jlkay1BBNbrBtgeveFwtBvPwZEA",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Battle-Scarred"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy. It has been hand painted in vibrant colors and accentuated by a smiley face on the stock.\n\n<i>Protect what is yours</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Chroma 3 Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 0,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M5751721175886492575A%assetid%D9407598250998051648",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A1-S | Chantico's Fire",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A1-S | Chantico's Fire (Battle-Scarred)",
+        "market_hash_name": "M4A1-S | Chantico's Fire (Battle-Scarred)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M5751721175886492575A%assetid%D9407598250998051648",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34576941208": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34576941208",
+        "classid": "5620615157",
+        "instanceid": "188530139",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34576941208",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alIITCmX5d_MR6j_v-_Yn0nk36_xFkNTv0JIeSIwJraAvY_1m3x-y5jcTv7cvMmyA3s3MnsHfcn0C1hQYMMLIwCAuYbA",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alIITCmX5d_MR6j_v-_Yn0nk2LpxIuNDztINSdJFQ5YVnXq1XryL3ngJ61up-fwSAw63Ynty2Jlkay1BBNbrBtgeveFwtBvPwZEA",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Battle-Scarred"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy. It has been hand painted in vibrant colors and accentuated by a smiley face on the stock.\n\n<i>Protect what is yours</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Chroma 3 Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "<br><div id=\"sticker_info\" name=\"sticker_info\" title=\"Sticker\" style=\"border: 2px solid rgb(102, 102, 102); border-radius: 6px; width=100; margin:4px; padding:8px;\"><center><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/paris2023/vita.eec767341d18964b7fea56c9469769ec9ed3e05b.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/paris2023/vita.eec767341d18964b7fea56c9469769ec9ed3e05b.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/paris2023/vita.eec767341d18964b7fea56c9469769ec9ed3e05b.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/paris2023/vita.eec767341d18964b7fea56c9469769ec9ed3e05b.png\"><br>Sticker: Vitality | Paris 2023, Vitality | Paris 2023, Vitality | Paris 2023, Vitality | Paris 2023</center></div>"
+            }
+        ],
+        "tradable": 0,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6224599137650964181A%assetid%D5658401463432992654",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A1-S | Chantico's Fire",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A1-S | Chantico's Fire (Battle-Scarred)",
+        "market_hash_name": "M4A1-S | Chantico's Fire (Battle-Scarred)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6224599137650964181A%assetid%D5658401463432992654",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "29524286527": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "29524286527",
+        "classid": "1704464652",
+        "instanceid": "188530139",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "29524286527",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alIITCmX5d_MR6j_v-_Yn0nk36_xFkNTv0JIeSIwJraAvY_1m3x-y5jcTv7cvMmyA3s3MnsHfcn0C1hQYMMLIwCAuYbA",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alIITCmX5d_MR6j_v-_Yn0nk2LpxIuNDztINSdJFQ5YVnXq1XryL3ngJ61up-fwSAw63Ynty2Jlkay1BBNbrBtgeveFwtBvPwZEA",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Battle-Scarred"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy. It has been hand painted in vibrant colors and accentuated by a smiley face on the stock.\n\n<i>Protect what is yours</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Chroma 3 Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M7119689565252811137A%assetid%D13865643085984414536",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A1-S | Chantico's Fire",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A1-S | Chantico's Fire (Battle-Scarred)",
+        "market_hash_name": "M4A1-S | Chantico's Fire (Battle-Scarred)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M7119689565252811137A%assetid%D13865643085984414536",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34248774420": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34248774420",
+        "classid": "1704464652",
+        "instanceid": "480085569",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34248774420",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alIITCmX5d_MR6j_v-_Yn0nk36_xFkNTv0JIeSIwJraAvY_1m3x-y5jcTv7cvMmyA3s3MnsHfcn0C1hQYMMLIwCAuYbA",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alIITCmX5d_MR6j_v-_Yn0nk2LpxIuNDztINSdJFQ5YVnXq1XryL3ngJ61up-fwSAw63Ynty2Jlkay1BBNbrBtgeveFwtBvPwZEA",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Battle-Scarred"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy. It has been hand painted in vibrant colors and accentuated by a smiley face on the stock.\n\n<i>Protect what is yours</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Chroma 3 Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M7118563665346534346A%assetid%D587902596735555520",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A1-S | Chantico's Fire",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A1-S | Chantico's Fire (Battle-Scarred)",
+        "market_hash_name": "M4A1-S | Chantico's Fire (Battle-Scarred)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M7118563665346534346A%assetid%D587902596735555520",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "31656821013": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "31656821013",
+        "classid": "1704464652",
+        "instanceid": "188530139",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "31656821013",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alIITCmX5d_MR6j_v-_Yn0nk36_xFkNTv0JIeSIwJraAvY_1m3x-y5jcTv7cvMmyA3s3MnsHfcn0C1hQYMMLIwCAuYbA",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alIITCmX5d_MR6j_v-_Yn0nk2LpxIuNDztINSdJFQ5YVnXq1XryL3ngJ61up-fwSAw63Ynty2Jlkay1BBNbrBtgeveFwtBvPwZEA",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Battle-Scarred"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy. It has been hand painted in vibrant colors and accentuated by a smiley face on the stock.\n\n<i>Protect what is yours</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Chroma 3 Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6310167530570895889A%assetid%D13865643085984414536",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A1-S | Chantico's Fire",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A1-S | Chantico's Fire (Battle-Scarred)",
+        "market_hash_name": "M4A1-S | Chantico's Fire (Battle-Scarred)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6310167530570895889A%assetid%D13865643085984414536",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "32985542440": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "32985542440",
+        "classid": "2735515991",
+        "instanceid": "188530139",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "32985542440",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09Kzm7-FmP7mDLbUkmJE5YsliLqYrNql3Qy2qEBqZm7wcY_BJA5qZQrQ_FK4xb3uh8C56pvMmiBmpGB8slvVzAVE",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09Kzm7-FmP7mDLbUkmJE5fp9i_vG8MKhigft8kVsZmGhd4WTdwE9NFGErFnqxbzvg5W6uM7IyyRm7CYnti3YgVXp1vjKz5XZ",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. It has been custom painted with a stylized blue-magenta woman over a grayscale background.\n\n<i>\"She grabbed what she could and disappeared into a decaying dystopia\"</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Clutch Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M5751721175887079165A%assetid%D16592565652680674954",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A4 | Neo-Noir",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A4 | Neo-Noir (Field-Tested)",
+        "market_hash_name": "M4A4 | Neo-Noir (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M5751721175887079165A%assetid%D16592565652680674954",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "14544496542": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "14544496542",
+        "classid": "2869497317",
+        "instanceid": "480226483",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "14544496542",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09mgnYy0k_b9PqLeqWZU7Mxkh6fFoN2n0QDj_xA-NTj2LdWUdlI_M1yG_Fbqw-npgJG9vJ3OyXRi7HMn-z-DyAyYxUni",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09mgnYy0k_b9PqLeqWZU7Mxkh9bN9J7yjRqw_kJuam30INXHJFc7aAvR_gW_k-q5g5HovprPzHViuiAl5XncyUayn1gSOeN9uncr",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "This item features StatTrak\u2122 technology, which tracks certain statistics when equipped by its owner.",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "StatTrak\u2122 Confirmed Kills: 3996",
+                "color": "CF6A32"
+            },
+            {
+                "type": "html",
+                "value": "*Stats for this item will reset when used in Steam Trading or Community Market",
+                "color": "ff4040"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. It has been custom painted with a graphic design in red and black.\n\n<i>Carmen. I found him...- The Oni and The Valkyrie Part 1</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Falchion Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "<br><div id=\"sticker_info\" name=\"sticker_info\" title=\"Sticker\" style=\"border: 2px solid rgb(102, 102, 102); border-radius: 6px; width=100; margin:4px; padding:8px;\"><center><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/krakow2017/sig_sunny.135edc7ea68eda1ae16b5de6dc4db666045f5847.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/krakow2017/sig_oskar.cf2ab9b0494275b8a3c39d741a36a01c6fedebfc.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/community02/queenofpain.2243e218beaebb1509d1fdda9d8718b16f468a12.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/atlanta2017/mss.263ab8d579da5b0ac8210bfe0e1a95a3306c33c0.png\"><br>Sticker: suNny | Krakow 2017, oskar | Krakow 2017, Queen Of Pain, mousesports | Atlanta 2017</center></div>"
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6307915730760156137A%assetid%D7253048059952318178",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "StatTrak\u2122 M4A4 | Evil Daimyo",
+        "name_color": "CF6A32",
+        "type": "StatTrak\u2122 Restricted Rifle",
+        "market_name": "StatTrak\u2122 M4A4 | Evil Daimyo (Field-Tested)",
+        "market_hash_name": "StatTrak\u2122 M4A4 | Evil Daimyo (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6307915730760156137A%assetid%D7253048059952318178",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34583490094": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34583490094",
+        "classid": "5621145756",
+        "instanceid": "188530170",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34583490094",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09mgnYy0k_b9PqLeqWZU7Mxkh6fFoN2n0QDj_xA-NTj2LdWUdlI_M1yG_Fbqw-npgJG9vJ3OyXRi7HMn-z-DyAyYxUni",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09mgnYy0k_b9PqLeqWZU7Mxkh9bN9J7yjRqw_kJuam30INXHJFc7aAvR_gW_k-q5g5HovprPzHViuiAl5XncyUayn1gSOeN9uncr",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "This item features StatTrak\u2122 technology, which tracks certain statistics when equipped by its owner.",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "This item tracks Confirmed Kills.",
+                "color": "CF6A32"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. It has been custom painted with a graphic design in red and black.\n\n<i>Carmen. I found him...- The Oni and The Valkyrie Part 1</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Falchion Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "<br><div id=\"sticker_info\" name=\"sticker_info\" title=\"Sticker\" style=\"border: 2px solid rgb(102, 102, 102); border-radius: 6px; width=100; margin:4px; padding:8px;\"><center><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/csgo10/cbbl_holo.5a7927a80fe0bd976e11ebb8fb620ae66003fb52.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/rmr2020/nemi.a2e883d01c23f7290d16661b92189ce066dae5bc.png\"><br>Sticker: Cbbl (Holo), Nemiga | 2020 RMR</center></div>"
+            }
+        ],
+        "tradable": 0,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6921531181246505890A%assetid%D7398469493211465412",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "StatTrak\u2122 M4A4 | Evil Daimyo",
+        "name_color": "CF6A32",
+        "type": "StatTrak\u2122 Restricted Rifle",
+        "market_name": "StatTrak\u2122 M4A4 | Evil Daimyo (Field-Tested)",
+        "market_hash_name": "StatTrak\u2122 M4A4 | Evil Daimyo (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6921531181246505890A%assetid%D7398469493211465412",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34360400515": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34360400515",
+        "classid": "5609606724",
+        "instanceid": "480114543",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34360400515",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09mgnYy0k_b9PqLeqWZU7Mxkh6fFoN2n0QDj_xA-NTj2LdWUdlI_M1yG_Fbqw-npgJG9vJ3OyXRi7HMn-z-DyAyYxUni",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09mgnYy0k_b9PqLeqWZU7Mxkh9bN9J7yjRqw_kJuam30INXHJFc7aAvR_gW_k-q5g5HovprPzHViuiAl5XncyUayn1gSOeN9uncr",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "This item features StatTrak\u2122 technology, which tracks certain statistics when equipped by its owner.",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "StatTrak\u2122 Confirmed Kills: 1469",
+                "color": "CF6A32"
+            },
+            {
+                "type": "html",
+                "value": "*Stats for this item will reset when used in Steam Trading or Community Market",
+                "color": "ff4040"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. It has been custom painted with a graphic design in red and black.\n\n<i>Carmen. I found him...- The Oni and The Valkyrie Part 1</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Falchion Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "<br><div id=\"sticker_info\" name=\"sticker_info\" title=\"Sticker\" style=\"border: 2px solid rgb(102, 102, 102); border-radius: 6px; width=100; margin:4px; padding:8px;\"><center><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/paris2023/sig_dupreeh_champion.b5f1b40f627b8f04f91b9d80c0af2594e2d4c8ac.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/paris2023/sig_apex_champion.1c0c40752047339f1f7a5a827a56b66bb3fc78d1.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/paris2023/sig_zywoo_champion.fe005be98121bd63a0267f7a59c2145cbb2d936e.png\"><br>Sticker: dupreeh (Champion) | Paris 2023, apEX (Champion) | Paris 2023, ZywOo (Champion) | Paris 2023</center></div>"
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M7118563665344333636A%assetid%D2918344285015493128",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "StatTrak\u2122 M4A4 | Evil Daimyo",
+        "name_color": "CF6A32",
+        "type": "StatTrak\u2122 Restricted Rifle",
+        "market_name": "StatTrak\u2122 M4A4 | Evil Daimyo (Field-Tested)",
+        "market_hash_name": "StatTrak\u2122 M4A4 | Evil Daimyo (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M7118563665344333636A%assetid%D2918344285015493128",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "33712478377": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "33712478377",
+        "classid": "1011941264",
+        "instanceid": "903114320",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "33712478377",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09mgnYy0k_b9PqLeqWZU7Mxkh6fFoN2n0QDj_xA-NTj2LdWUdlI_M1yG_Fbqw-npgJG9vJ3OyXRi7HMn-z-DyAyYxUni",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09mgnYy0k_b9PqLeqWZU7Mxkh9bN9J7yjRqw_kJuam30INXHJFc7aAvR_gW_k-q5g5HovprPzHViuiAl5XncyUayn1gSOeN9uncr",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "This item features StatTrak\u2122 technology, which tracks certain statistics when equipped by its owner.",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "StatTrak\u2122 Confirmed Kills: 133",
+                "color": "CF6A32"
+            },
+            {
+                "type": "html",
+                "value": "*Stats for this item will reset when used in Steam Trading or Community Market",
+                "color": "ff4040"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. It has been custom painted with a graphic design in red and black.\n\n<i>Carmen. I found him...- The Oni and The Valkyrie Part 1</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Falchion Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M5408321703895355324A%assetid%D14415602833170835496",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "StatTrak\u2122 M4A4 | Evil Daimyo",
+        "name_color": "CF6A32",
+        "type": "StatTrak\u2122 Restricted Rifle",
+        "market_name": "StatTrak\u2122 M4A4 | Evil Daimyo (Field-Tested)",
+        "market_hash_name": "StatTrak\u2122 M4A4 | Evil Daimyo (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M5408321703895355324A%assetid%D14415602833170835496",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042058": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042058",
+        "classid": "5613098018",
+        "instanceid": "0",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042058",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFMu1aPMI24auITjxteJwPXxY72AkGgIvZAniLjHpon2jlbl-kpvNjz3JJjVLFG9rl1YLQ",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Container Series #18",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Contains one of the following:"
+            },
+            {
+                "type": "html",
+                "value": "MP7 | Urban Hazard",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Negev | Desert-Strike",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "P2000 | Ivory",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "SSG 08 | Abyss",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "UMP-45 | Labyrinth",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "PP-Bizon | Osiris",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "CZ75-Auto | Tigris",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Nova | Koi",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "P250 | Supernova",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Desert Eagle | Conspiracy",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "Five-SeveN | Fowl Play",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "Glock-18 | Water Elemental",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "P90 | Asiimov",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "M4A1-S | Cyrex",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "or an Exceedingly Rare Butterfly Knife!",
+                "color": "ffd700"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "",
+                "color": "00a000"
+            }
+        ],
+        "tradable": 0,
+        "name": "Operation Breakout Weapon Case",
+        "name_color": "D2D2D2",
+        "type": "Base Grade Container",
+        "market_name": "Operation Breakout Weapon Case",
+        "market_hash_name": "Operation Breakout Weapon Case",
+        "commodity": 1,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "market_buy_country_restriction": "FR",
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042085": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042085",
+        "classid": "5613098018",
+        "instanceid": "0",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042085",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFMu1aPMI24auITjxteJwPXxY72AkGgIvZAniLjHpon2jlbl-kpvNjz3JJjVLFG9rl1YLQ",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Container Series #18",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Contains one of the following:"
+            },
+            {
+                "type": "html",
+                "value": "MP7 | Urban Hazard",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Negev | Desert-Strike",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "P2000 | Ivory",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "SSG 08 | Abyss",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "UMP-45 | Labyrinth",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "PP-Bizon | Osiris",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "CZ75-Auto | Tigris",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Nova | Koi",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "P250 | Supernova",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Desert Eagle | Conspiracy",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "Five-SeveN | Fowl Play",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "Glock-18 | Water Elemental",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "P90 | Asiimov",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "M4A1-S | Cyrex",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "or an Exceedingly Rare Butterfly Knife!",
+                "color": "ffd700"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "",
+                "color": "00a000"
+            }
+        ],
+        "tradable": 0,
+        "name": "Operation Breakout Weapon Case",
+        "name_color": "D2D2D2",
+        "type": "Base Grade Container",
+        "market_name": "Operation Breakout Weapon Case",
+        "market_hash_name": "Operation Breakout Weapon Case",
+        "commodity": 1,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "market_buy_country_restriction": "FR",
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042873": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042873",
+        "classid": "4727380233",
+        "instanceid": "188530170",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042873",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJf0Ob3dDFL-Nmlq4KOgPbmNoTck29Y_cg_3O-Rpo7z0Qbn_UtlYT32IIeQIAY4Yl2C8lLqlLjo1pTuvsyfyyNr6z5iuyjEua_OVA",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJf0Ob3dDFL-Nmlq4KOgPbmNoTck29Y_chOhujT8om73lLk-BE6amvwIo6ccFI7ZVnVqFG4wuu9jZXo6cvOmnAxuHF05y7Vzgv3308iWLK6fw",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "This item features StatTrak\u2122 technology, which tracks certain statistics when equipped by its owner.",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "This item tracks Confirmed Kills.",
+                "color": "CF6A32"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Firing two large-mag Berettas at once will lower accuracy and increase load times. On the bright side, you'll get to fire two large-mag Berettas at once. These berettas have been custom painted with a twisted, frightening depiction of a watermelon over a navy blue background.\n\n<i>Sweet dreams...</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Dreams & Nightmares Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071894546A%assetid%D12260078895772737558",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "StatTrak\u2122 Dual Berettas | Melondrama",
+        "name_color": "CF6A32",
+        "type": "StatTrak\u2122 Classified Pistol",
+        "market_name": "StatTrak\u2122 Dual Berettas | Melondrama (Field-Tested)",
+        "market_hash_name": "StatTrak\u2122 Dual Berettas | Melondrama (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071894546A%assetid%D12260078895772737558",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042871": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042871",
+        "classid": "4727380233",
+        "instanceid": "188530170",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042871",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJf0Ob3dDFL-Nmlq4KOgPbmNoTck29Y_cg_3O-Rpo7z0Qbn_UtlYT32IIeQIAY4Yl2C8lLqlLjo1pTuvsyfyyNr6z5iuyjEua_OVA",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJf0Ob3dDFL-Nmlq4KOgPbmNoTck29Y_chOhujT8om73lLk-BE6amvwIo6ccFI7ZVnVqFG4wuu9jZXo6cvOmnAxuHF05y7Vzgv3308iWLK6fw",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "This item features StatTrak\u2122 technology, which tracks certain statistics when equipped by its owner.",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "This item tracks Confirmed Kills.",
+                "color": "CF6A32"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Firing two large-mag Berettas at once will lower accuracy and increase load times. On the bright side, you'll get to fire two large-mag Berettas at once. These berettas have been custom painted with a twisted, frightening depiction of a watermelon over a navy blue background.\n\n<i>Sweet dreams...</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Dreams & Nightmares Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071894666A%assetid%D12260078895772737558",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "StatTrak\u2122 Dual Berettas | Melondrama",
+        "name_color": "CF6A32",
+        "type": "StatTrak\u2122 Classified Pistol",
+        "market_name": "StatTrak\u2122 Dual Berettas | Melondrama (Field-Tested)",
+        "market_hash_name": "StatTrak\u2122 Dual Berettas | Melondrama (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071894666A%assetid%D12260078895772737558",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042878": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042878",
+        "classid": "4727380233",
+        "instanceid": "902658099",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042878",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJf0Ob3dDFL-Nmlq4KOgPbmNoTck29Y_cg_3O-Rpo7z0Qbn_UtlYT32IIeQIAY4Yl2C8lLqlLjo1pTuvsyfyyNr6z5iuyjEua_OVA",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJf0Ob3dDFL-Nmlq4KOgPbmNoTck29Y_chOhujT8om73lLk-BE6amvwIo6ccFI7ZVnVqFG4wuu9jZXo6cvOmnAxuHF05y7Vzgv3308iWLK6fw",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "This item features StatTrak\u2122 technology, which tracks certain statistics when equipped by its owner.",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "This item tracks Confirmed Kills.",
+                "color": "CF6A32"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Firing two large-mag Berettas at once will lower accuracy and increase load times. On the bright side, you'll get to fire two large-mag Berettas at once. These berettas have been custom painted with a twisted, frightening depiction of a watermelon over a navy blue background.\n\n<i>Sweet dreams...</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Dreams & Nightmares Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071894456A%assetid%D5209123435200391824",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "StatTrak\u2122 Dual Berettas | Melondrama",
+        "name_color": "CF6A32",
+        "type": "StatTrak\u2122 Classified Pistol",
+        "market_name": "StatTrak\u2122 Dual Berettas | Melondrama (Field-Tested)",
+        "market_hash_name": "StatTrak\u2122 Dual Berettas | Melondrama (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071894456A%assetid%D5209123435200391824",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042169": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042169",
+        "classid": "5611893579",
+        "instanceid": "0",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042169",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsVFx5KAVo5PSkKV4xhfGfKTgVvIXlxNPSwaOmMLiGwzgJvJMniO-Zoo_z2wXg-EVvfSmtc78HsNoy",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Container Series #172",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Contains one of the following:"
+            },
+            {
+                "type": "html",
+                "value": "CZ75-Auto | Imprint",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Five-SeveN | Scumbria",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "G3SG1 | Ventilator",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Negev | Dazzle",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "P90 | Grim",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "UMP-45 | Briefing",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "XM1014 | Slipstream",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Desert Eagle | Directive",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Glock-18 | Weasel",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "MAG-7 | Petroglyph",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SCAR-20 | Powercore",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SG 553 | Triarch",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "AUG | Syd Mead",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "MP9 | Airlock",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "Tec-9 | Fuel Injector",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "AK-47 | Neon Revolution",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "FAMAS | Roll Cage",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "or an Exceedingly Rare Special Item!",
+                "color": "ffd700"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "",
+                "color": "00a000"
+            }
+        ],
+        "tradable": 1,
+        "name": "Gamma 2 Case",
+        "name_color": "D2D2D2",
+        "type": "Base Grade Container",
+        "market_name": "Gamma 2 Case",
+        "market_hash_name": "Gamma 2 Case",
+        "commodity": 1,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "market_buy_country_restriction": "FR",
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042061": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042061",
+        "classid": "5613099275",
+        "instanceid": "0",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042061",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsVFx5KAVo5PSkKV4xhfGfKTgVvIXlxNPSwaOmMLiGwzgJvJMniO-Zoo_z2wXg-EVvfSmtc78HsNoy",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Container Series #172",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Contains one of the following:"
+            },
+            {
+                "type": "html",
+                "value": "CZ75-Auto | Imprint",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Five-SeveN | Scumbria",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "G3SG1 | Ventilator",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Negev | Dazzle",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "P90 | Grim",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "UMP-45 | Briefing",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "XM1014 | Slipstream",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Desert Eagle | Directive",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Glock-18 | Weasel",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "MAG-7 | Petroglyph",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SCAR-20 | Powercore",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SG 553 | Triarch",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "AUG | Syd Mead",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "MP9 | Airlock",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "Tec-9 | Fuel Injector",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "AK-47 | Neon Revolution",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "FAMAS | Roll Cage",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "or an Exceedingly Rare Special Item!",
+                "color": "ffd700"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "",
+                "color": "00a000"
+            }
+        ],
+        "tradable": 0,
+        "name": "Gamma 2 Case",
+        "name_color": "D2D2D2",
+        "type": "Base Grade Container",
+        "market_name": "Gamma 2 Case",
+        "market_hash_name": "Gamma 2 Case",
+        "commodity": 1,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "market_buy_country_restriction": "FR",
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042087": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042087",
+        "classid": "5613099275",
+        "instanceid": "0",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042087",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsVFx5KAVo5PSkKV4xhfGfKTgVvIXlxNPSwaOmMLiGwzgJvJMniO-Zoo_z2wXg-EVvfSmtc78HsNoy",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Container Series #172",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Contains one of the following:"
+            },
+            {
+                "type": "html",
+                "value": "CZ75-Auto | Imprint",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Five-SeveN | Scumbria",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "G3SG1 | Ventilator",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Negev | Dazzle",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "P90 | Grim",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "UMP-45 | Briefing",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "XM1014 | Slipstream",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Desert Eagle | Directive",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Glock-18 | Weasel",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "MAG-7 | Petroglyph",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SCAR-20 | Powercore",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SG 553 | Triarch",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "AUG | Syd Mead",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "MP9 | Airlock",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "Tec-9 | Fuel Injector",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "AK-47 | Neon Revolution",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "FAMAS | Roll Cage",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "or an Exceedingly Rare Special Item!",
+                "color": "ffd700"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "",
+                "color": "00a000"
+            }
+        ],
+        "tradable": 0,
+        "name": "Gamma 2 Case",
+        "name_color": "D2D2D2",
+        "type": "Base Grade Container",
+        "market_name": "Gamma 2 Case",
+        "market_hash_name": "Gamma 2 Case",
+        "commodity": 1,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "market_buy_country_restriction": "FR",
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042159": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042159",
+        "classid": "5611893579",
+        "instanceid": "0",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042159",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsVFx5KAVo5PSkKV4xhfGfKTgVvIXlxNPSwaOmMLiGwzgJvJMniO-Zoo_z2wXg-EVvfSmtc78HsNoy",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Container Series #172",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Contains one of the following:"
+            },
+            {
+                "type": "html",
+                "value": "CZ75-Auto | Imprint",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Five-SeveN | Scumbria",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "G3SG1 | Ventilator",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Negev | Dazzle",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "P90 | Grim",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "UMP-45 | Briefing",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "XM1014 | Slipstream",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Desert Eagle | Directive",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Glock-18 | Weasel",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "MAG-7 | Petroglyph",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SCAR-20 | Powercore",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SG 553 | Triarch",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "AUG | Syd Mead",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "MP9 | Airlock",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "Tec-9 | Fuel Injector",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "AK-47 | Neon Revolution",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "FAMAS | Roll Cage",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "or an Exceedingly Rare Special Item!",
+                "color": "ffd700"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "",
+                "color": "00a000"
+            }
+        ],
+        "tradable": 1,
+        "name": "Gamma 2 Case",
+        "name_color": "D2D2D2",
+        "type": "Base Grade Container",
+        "market_name": "Gamma 2 Case",
+        "market_hash_name": "Gamma 2 Case",
+        "commodity": 1,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "market_buy_country_restriction": "FR",
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042167": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042167",
+        "classid": "5611893579",
+        "instanceid": "0",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042167",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsVFx5KAVo5PSkKV4xhfGfKTgVvIXlxNPSwaOmMLiGwzgJvJMniO-Zoo_z2wXg-EVvfSmtc78HsNoy",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Container Series #172",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Contains one of the following:"
+            },
+            {
+                "type": "html",
+                "value": "CZ75-Auto | Imprint",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Five-SeveN | Scumbria",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "G3SG1 | Ventilator",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Negev | Dazzle",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "P90 | Grim",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "UMP-45 | Briefing",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "XM1014 | Slipstream",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Desert Eagle | Directive",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Glock-18 | Weasel",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "MAG-7 | Petroglyph",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SCAR-20 | Powercore",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SG 553 | Triarch",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "AUG | Syd Mead",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "MP9 | Airlock",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "Tec-9 | Fuel Injector",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "AK-47 | Neon Revolution",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "FAMAS | Roll Cage",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "or an Exceedingly Rare Special Item!",
+                "color": "ffd700"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "",
+                "color": "00a000"
+            }
+        ],
+        "tradable": 1,
+        "name": "Gamma 2 Case",
+        "name_color": "D2D2D2",
+        "type": "Base Grade Container",
+        "market_name": "Gamma 2 Case",
+        "market_hash_name": "Gamma 2 Case",
+        "commodity": 1,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "market_buy_country_restriction": "FR",
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042880": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042880",
+        "classid": "5437884993",
+        "instanceid": "188530139",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042880",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09C5goW0n_L1JaKfwTkEvJEo3brCpNukiwa3-0dlZWn1LNfDJFM7ZV-C_1Xol-u6jcO7vIOJlyVX0tNyBw",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09C5goW0n_L1JaLummpD78A_3buUodis3we3-kRtMGugJIKcdAY4aQmGrAS7xem9gJLq6picwSdkuj5iuyhWNaOWsA",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Battle-Scarred"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. It has been custom painted using neon colors and covered with hand-drawn designs.\n\n<i>Fight for one, fight for all</i>"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Snakebite Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "<br><div id=\"sticker_info\" name=\"sticker_info\" title=\"Sticker\" style=\"border: 2px solid rgb(102, 102, 102); border-radius: 6px; width=100; margin:4px; padding:8px;\"><center><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/paris2023/nip.e0cccc5d798e9754ab0dc1184a8af743257ee568.png\"><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/stockh2021/shrk.b1ec3bab6b000a0374614de3426983acafbac784.png\"><br>Sticker: Ninjas in Pyjamas | Paris 2023, Sharks Esports | Stockholm 2021</center></div>"
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071895806A%assetid%D11722427837287484620",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A4 | In Living Color",
+        "name_color": "D2D2D2",
+        "type": "Covert Rifle",
+        "market_name": "M4A4 | In Living Color (Battle-Scarred)",
+        "market_hash_name": "M4A4 | In Living Color (Battle-Scarred)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071895806A%assetid%D11722427837287484620",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042879": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042879",
+        "classid": "5613097777",
+        "instanceid": "0",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042879",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFYynaSdJGhE74y0wNWIw_OlNuvXkDpSuZQmi--SrN-h3gey-Uo6YWmlIoCLMlhplhFFvwI",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Container Series #141",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Contains one of the following:"
+            },
+            {
+                "type": "html",
+                "value": "Dual Berettas | Ventilators",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "G3SG1 | Orange Crash",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "M249 | Spectre",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "MP9 | Bioleak",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "P2000 | Oceanic",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Sawed-Off | Fubar",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "SG 553 | Atlas",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "CZ75-Auto | Red Astor",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Galil AR | Firefight",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SSG 08 | Ghost Crusader",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Tec-9 | Re-Entry",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "XM1014 | Black Tie",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "AUG | Fleet Flock",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "P250 | Asiimov",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "UMP-45 | Primal Saber",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "PP-Bizon | Judgement of Anubis",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "M4A1-S | Chantico's Fire",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "or an Exceedingly Rare Special Item!",
+                "color": "ffd700"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "",
+                "color": "00a000"
+            }
+        ],
+        "tradable": 0,
+        "name": "Chroma 3 Case",
+        "name_color": "D2D2D2",
+        "type": "Base Grade Container",
+        "market_name": "Chroma 3 Case",
+        "market_hash_name": "Chroma 3 Case",
+        "commodity": 1,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "market_buy_country_restriction": "FR",
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042171": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042171",
+        "classid": "5613097777",
+        "instanceid": "0",
+        "amount": "0",
+        "status": 4,
+        "original_amount": "1",
+        "unowned_id": "34569042171",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFYynaSdJGhE74y0wNWIw_OlNuvXkDpSuZQmi--SrN-h3gey-Uo6YWmlIoCLMlhplhFFvwI",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Container Series #141",
+                "color": "99ccff"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "Contains one of the following:"
+            },
+            {
+                "type": "html",
+                "value": "Dual Berettas | Ventilators",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "G3SG1 | Orange Crash",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "M249 | Spectre",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "MP9 | Bioleak",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "P2000 | Oceanic",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "Sawed-Off | Fubar",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "SG 553 | Atlas",
+                "color": "4b69ff"
+            },
+            {
+                "type": "html",
+                "value": "CZ75-Auto | Red Astor",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Galil AR | Firefight",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "SSG 08 | Ghost Crusader",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "Tec-9 | Re-Entry",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "XM1014 | Black Tie",
+                "color": "8847ff"
+            },
+            {
+                "type": "html",
+                "value": "AUG | Fleet Flock",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "P250 | Asiimov",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "UMP-45 | Primal Saber",
+                "color": "d32ce6"
+            },
+            {
+                "type": "html",
+                "value": "PP-Bizon | Judgement of Anubis",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "M4A1-S | Chantico's Fire",
+                "color": "eb4b4b"
+            },
+            {
+                "type": "html",
+                "value": "or an Exceedingly Rare Special Item!",
+                "color": "ffd700"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "",
+                "color": "00a000"
+            }
+        ],
+        "tradable": 0,
+        "name": "Chroma 3 Case",
+        "name_color": "D2D2D2",
+        "type": "Base Grade Container",
+        "market_name": "Chroma 3 Case",
+        "market_hash_name": "Chroma 3 Case",
+        "commodity": 1,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "market_buy_country_restriction": "FR",
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042066": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042066",
+        "classid": "310777229",
+        "instanceid": "188530139",
+        "amount": "1",
+        "status": 2,
+        "original_amount": "1",
+        "unowned_id": "34569042066",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO-jb-ZkvPgOrzUhFRc7cF4n-SPoI3x3FXj-kBoMDzwddXBJgE6Yg7Vqwe-x-jthpO0vc6dmHZr7iIr7GGdwUKDRtB-kw",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO-jb-ZkvPgOrzUhFRc7cF4n-T--Y3nj1H6_hI4Zzj0JYWRIVM9MAuErla6wrjq1MC8upvLyndru3N2tHvVyxe-iAYMMLLRM4KOIA",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy. It has been painted using a jungle tiger hydrographic."
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Arms Deal 2 Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071888336A%assetid%D14907168653089116934",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A1-S | Blood Tiger",
+        "name_color": "D2D2D2",
+        "type": "Mil-Spec Grade Rifle",
+        "market_name": "M4A1-S | Blood Tiger (Field-Tested)",
+        "market_hash_name": "M4A1-S | Blood Tiger (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071888336A%assetid%D14907168653089116934",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    },
+    "34569042057": {
+        "currency": 0,
+        "appid": 730,
+        "contextid": "2",
+        "id": "34569042057",
+        "classid": "5231759661",
+        "instanceid": "188530139",
+        "amount": "1",
+        "status": 2,
+        "original_amount": "1",
+        "unowned_id": "34569042057",
+        "unowned_contextid": "2",
+        "background_color": "",
+        "icon_url": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO-jb-ZkvPgOrzUhFRc7cF4n-SPoI3x3FXj-kBoMDzwddXBJgE6Yg7Vqwe-x-jthpO0vc6dmHZr7iIr7GGdwUKDRtB-kw",
+        "icon_url_large": "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO-jb-ZkvPgOrzUhFRc7cF4n-T--Y3nj1H6_hI4Zzj0JYWRIVM9MAuErla6wrjq1MC8upvLyndru3N2tHvVyxe-iAYMMLLRM4KOIA",
+        "descriptions": [
+            {
+                "type": "html",
+                "value": "Exterior: Field-Tested"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy. It has been painted using a jungle tiger hydrographic."
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "The Arms Deal 2 Collection",
+                "color": "9da1a9"
+            },
+            {
+                "type": "html",
+                "value": " "
+            },
+            {
+                "type": "html",
+                "value": "<br><div id=\"sticker_info\" name=\"sticker_info\" title=\"Sticker\" style=\"border: 2px solid rgb(102, 102, 102); border-radius: 6px; width=100; margin:4px; padding:8px;\"><center><img width=64 height=48 src=\"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/stickers/community2022/spectators_paper.da715163b4eca0c6122f598b9c6e1b765a50f00e.png\"><br>Sticker: Spectators</center></div>"
+            }
+        ],
+        "tradable": 1,
+        "actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071888426A%assetid%D5676930722323453318",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "name": "M4A1-S | Blood Tiger",
+        "name_color": "D2D2D2",
+        "type": "Mil-Spec Grade Rifle",
+        "market_name": "M4A1-S | Blood Tiger (Field-Tested)",
+        "market_hash_name": "M4A1-S | Blood Tiger (Field-Tested)",
+        "market_actions": [
+            {
+                "link": "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20M6429512921071888426A%assetid%D5676930722323453318",
+                "name": "Inspect in Game..."
+            }
+        ],
+        "commodity": 0,
+        "market_tradable_restriction": 7,
+        "marketable": 1,
+        "app_icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+        "owner": 0
+    }
+}
