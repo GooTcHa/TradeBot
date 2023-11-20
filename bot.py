@@ -12,8 +12,6 @@ from steam import SteamBot
 app_storage = {}
 gotchaSC = SteamBot(config.gotchaLog)
 
-#hello
-
 async def check_trades(client: SteamBot):
     print('check_trades')
     while True:
