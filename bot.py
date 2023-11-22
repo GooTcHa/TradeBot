@@ -13,7 +13,6 @@ app_storage = {}
 gotchaSC = SteamBot(config.gotchaLog)
 
 
-#Hello
 async def check_trades(client: SteamBot):
     print('check_trades')
     while True:
