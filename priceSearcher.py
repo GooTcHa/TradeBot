@@ -16,12 +16,12 @@ async def get_items_to_buy_in_steam(client: SteamBot):
     while True:
         with open('items_to_buy.json', 'r') as f:
             items = json.load(f)
-        if items['date'] < int(time.time()) - 87_000:
+        if items['date'] < int(time.time()) - 43_500:
             await csgotm.get_items_to_buy(client)
-        break
-            # await asyncio.sleep(86_400)
-        # else:
-        #     await asyncio.sleep(3_600)
+        # break
+            await asyncio.sleep(44_000)
+        else:
+            await asyncio.sleep(3_600)
 
 
 async def get_steam_cases_price(client: SteamBot) -> None:
@@ -29,12 +29,12 @@ async def get_steam_cases_price(client: SteamBot) -> None:
     while True:
         with open('steam_cases_ratio.json', 'r') as f:
             items = json.load(f)
-        if items['date'] < int(time.time()) - 21_500:
+        if items['date'] < int(time.time()) - 43_500:
             await client.get_max_steam_cases_price()
-        break
-            # await asyncio.sleep(21_600)
-        # else:
-        #     await asyncio.sleep(3_600)
+        # break
+            await asyncio.sleep(44_000)
+        else:
+            await asyncio.sleep(3_600)
 
 
 async def main():

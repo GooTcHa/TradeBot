@@ -74,13 +74,13 @@ class SteamBot:
                     if response.get('median_price') is not None:
                         price = float(response['median_price'].split(' ')[0].strip('$'))
                     else:
-                        price = float(response['lowest_price'].split(' ')[0].strip('$')) * 0.97
+                        price = float(response['lowest_price'].split(' ')[0].strip('$'))
                     if price <= items[item]:
-                        items_to_buy['ratio']['positive_ratio'][item] = price
+                        items_to_buy['ratio']['positive_ratio'][item] = price * 0.98
                     elif price * ratio <= items[item]:
-                        items_to_buy['ratio']['average_ratio'][item] = price * 0.975
+                        items_to_buy['ratio']['average_ratio'][item] = price * 0.97
                     else:
-                        items_to_buy['ratio']['negative_ratio'][item] = items[item] * 0.965
+                        items_to_buy['ratio']['negative_ratio'][item] = items[item] * 0.95
             except Exception as ex:
                 print(f'Exeption {ex} in get_steam_cases_info')
             await asyncio.sleep(6)
