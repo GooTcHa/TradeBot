@@ -135,6 +135,7 @@ class SteamBot:
                         'cases_ratio': {}}
         date = datetime.date.today() - datetime.timedelta(days=1)
         for case in config.containers:
+            print('case')
             try:
                 response = self.steam_client.market.fetch_price_history(case, GameOptions.CS)
                 if response['success']:

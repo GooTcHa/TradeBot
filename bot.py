@@ -30,10 +30,8 @@ async def check_steam_balance(client: SteamBot):
         listings = (await client.get_steam_listings())['buy_orders']
         await client.delete_buy_orders(listings.keys())
         balance = await client.get_balance()
-        #TODO exceptions
         if balance > 20:
             await client.create_buy_orders(balance * 1000)
-            # break
         await asyncio.sleep(43200)
 
 
