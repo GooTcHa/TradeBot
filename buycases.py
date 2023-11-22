@@ -1,11 +1,10 @@
 import asyncio
-import datetime
 import json
 import time
-from aiohttp import ClientSession
 
 import config
 import csgotm
+import steam
 from steam import SteamBot
 from steampy.models import GameOptions
 
