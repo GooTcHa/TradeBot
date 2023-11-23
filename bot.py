@@ -55,21 +55,23 @@ async def check_tm_balance(client) -> None:
 async def check_cases_in_steam_inventory(client):
     print('check_cases_in_steam_inventory')
     while True:
+        t = time.time()
         await client.sell_cases_from_inventory()
+        print(time.time() - t)
         await asyncio.sleep(3_600)
 
 
 #Create sell orders on tm
-#~
+#~15s
 async def check_items_to_sell_on_tm(client: SteamBot):
     print('check_items_to_sell_on_tm')
     while True:
-        t = time.time()
         await csgotm.create_new_listings_on_tm(client)
-        print(time.time() - t)
         await asyncio.sleep(86_400)
 
 
+#Check if sell price is close to current
+#~20s
 async def check_steam_listings(client: SteamBot):
     print('check_steam_listings')
     cmp_date: datetime.date
@@ -80,22 +82,28 @@ async def check_steam_listings(client: SteamBot):
         await asyncio.sleep(86_400)
 
 
+#Check selling items
+#~10
 async def check_tm_listings(client: SteamBot):
     while True:
-        # await csgotm.get_history(client)
+        await csgotm.get_history(client)
+        t = time.time()
         await csgotm.check_listings(client)
-        break
+        print(time.time() - t)
         await asyncio.sleep(14_400)
 
 
+#Get latest deals in steam
+#~5
 async def check_steam_deals(client: SteamBot):
     print('check_steam_deals')
     while True:
         await client.check_deals()
-        break
         await asyncio.sleep(3600)
 
 
+#Get latest deals in tm
+#~5
 async def check_tm_deals(client: SteamBot):
     print('check_tm_deals')
     while True:
@@ -133,7 +141,7 @@ async def main():
         #          asyncio.create_task(check_cases_in_steam_inventory(client=gotchaSC))]
         # tasks.append(asyncio.create_task(check_trades(client=gotchaSC)))
         # tasks.append(asyncio.create_task(get_items_to_buy_in_steam(client=gotchaSC)))
-        tasks.append(asyncio.create_task(check_items_to_sell_on_tm(client=gotchaSC)))
+        tasks.append(asyncio.create_task(check_tm_listings(client=gotchaSC)))
 
         await asyncio.gather(*tasks)
 

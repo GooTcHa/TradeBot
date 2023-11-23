@@ -187,7 +187,7 @@ class SteamBot:
             else:
                 break
         for listing in listings.keys():
-            date = listings[listing]['created_on'].split[' ']
+            date = listings[listing]['created_on'].split(' ')
             if len(date) == 2:
                 cmp_date = datetime.date(year=datetime.date.today().year, month=config.month[date[1]],
                                          day=int(date[0]))
@@ -195,7 +195,7 @@ class SteamBot:
                 cmp_date = datetime.date(year=datetime.date.today().year - 1, month=config.month[date[1]],
                                          day=int(date[0]))
             time_delta = datetime.timedelta(days=1)
-            if cmp_date > datetime.date.today() - time_delta:
+            if cmp_date <= datetime.date.today() - time_delta:
                 if listings[listing]['description']['market_hash_name'] in config.containers:
                     self.steam_client.market.cancel_sell_order(sell_listing_id=listings[listing]['listing_id'])
                     await asyncio.sleep(3)

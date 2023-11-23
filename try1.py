@@ -3,7 +3,7 @@ import datetime
 import json
 import time
 from operator import itemgetter
-
+from sys import argv
 import requests
 #
 # u='https://steamcommunity.com/market/itemordershistogram?country=BY&language=russian&currency=1&item_nameid=480085569&two_factor=0'
@@ -67,5 +67,5 @@ async def main():
 # s = ','
 # s = s.replace(',', '.')
 # print(s)
-
-print("{}".format(1))
+name = argv[1]
+print(name)
