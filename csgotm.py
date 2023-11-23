@@ -254,8 +254,9 @@ async def get_min_item_bid_price(client: SteamBot, market_name: str):
 
 
 async def set_item_listing_price(client: SteamBot, item_id: str, price: int):
-    url = f'https://market.csgo.com/api/v2/set-price?key={client.tmApiKey}' \
-              f'&item_id={item_id}&price={price - 1}&cur=USD'
+    url = f'https://market.csgo.com/api/v2/add-to-sale?key={client.tmApiKey}&id={item_id}&price={price - 1}&cur=USD'
+    # url = f'https://market.csgo.com/api/v2/set-price?key={client.tmApiKey}' \
+    #           f'&item_id={item_id}&price={price - 1}&cur=USD'
     while True:
         async with app_storage['session'].get(url=url) as response:
             if response.status == 200:
