@@ -1,20 +1,24 @@
 import datetime
-import json
 import time
 import asyncio
 from aiohttp import ClientSession
+import logging
 
 import config
 import csgotm
-import db
 from steam import SteamBot
 
 app_storage = {}
-gotchaSC = SteamBot(config.gotchaLog)
+gotchaSC = SteamBot(config.logInfoList['zybinsteam2'])
+logging.basicConfig(level=logging.INFO, filename="logs/bot.log", filemode="w",
+                    format="%(asctime)s %(levelname)s %(message)s")
 
 
+#Checking in/outcoming trades
+#Approximate time 3s.
 async def check_trades(client: SteamBot):
     print('check_trades')
+    logging.info(f'Check trades of {client.login} lunched')
     while True:
         trades = await csgotm.get_trades(client)
         if trades['success']:
@@ -23,6 +27,8 @@ async def check_trades(client: SteamBot):
         await asyncio.sleep(30)
 
 
+#Getting steam balance and creating buy orders if balance > 20$
+#Approximately 110s
 async def check_steam_balance(client: SteamBot):
     print('check_steam_balance')
     while True:
@@ -33,7 +39,8 @@ async def check_steam_balance(client: SteamBot):
             await client.create_buy_orders(balance * 1000)
         await asyncio.sleep(43200)
 
-
+#Check tm balance and create cases buy order on tm
+#~170s.
 async def check_tm_balance(client) -> None:
     print('check_tm_balance')
     while True:
@@ -43,6 +50,8 @@ async def check_tm_balance(client) -> None:
         await asyncio.sleep(3_600)
 
 
+#Find cases and sell them
+#Approximately 10s
 async def check_cases_in_steam_inventory(client):
     print('check_cases_in_steam_inventory')
     while True:
@@ -50,9 +59,14 @@ async def check_cases_in_steam_inventory(client):
         await asyncio.sleep(3_600)
 
 
+#Create sell orders on tm
+#~
 async def check_items_to_sell_on_tm(client: SteamBot):
+    print('check_items_to_sell_on_tm')
     while True:
+        t = time.time()
         await csgotm.create_new_listings_on_tm(client)
+        print(time.time() - t)
         await asyncio.sleep(86_400)
 
 
@@ -119,7 +133,7 @@ async def main():
         #          asyncio.create_task(check_cases_in_steam_inventory(client=gotchaSC))]
         # tasks.append(asyncio.create_task(check_trades(client=gotchaSC)))
         # tasks.append(asyncio.create_task(get_items_to_buy_in_steam(client=gotchaSC)))
-        tasks.append(asyncio.create_task(check_steam_deals(client=gotchaSC)))
+        tasks.append(asyncio.create_task(check_items_to_sell_on_tm(client=gotchaSC)))
 
         await asyncio.gather(*tasks)
 

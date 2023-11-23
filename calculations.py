@@ -19,7 +19,12 @@ async def get_cases_ratio(steamCasesInfo: dict, tmCasesInfo: dict) -> dict:
 
 async def find_unique_items(items, listed_items):
     listed_items_names = [item['market_hash_name'] for item in listed_items]
-    return list(set(item['market_hash_name'] for item in items if item['market_hash_name'] not in listed_items_names))
+    answer = []
+    for item in items:
+        if item['market_hash_name'] not in listed_items_names:
+            answer.append(item)
+            listed_items_names.append(item['market_hash_name'])
+    return answer
     # for item in items:
     #     if item['market_hash_name'] not in unique_items:
     #         unique_items.append(item)
@@ -28,7 +33,8 @@ async def find_unique_items(items, listed_items):
 
 async def find_listed_items(items: list):
     result = []
-    for item in items:
-        if int(item['status']) == 1:
-            result.append(item)
+    if items is not None and len(items):
+        for item in items:
+            if int(item['status']) == 1:
+                result.append(item)
     return result

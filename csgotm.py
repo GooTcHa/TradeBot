@@ -1,6 +1,7 @@
 import asyncio
 import json
 import time
+import logging
 
 from selenium import webdriver
 from selenium.common import TimeoutException
@@ -16,6 +17,8 @@ import steam
 from steam import SteamBot
 
 app_storage = {}
+logging.basicConfig(level=logging.INFO, filename="logs/csgotm.log", filemode="w",
+                    format="%(asctime)s %(levelname)s %(message)s")
 
 
 async def get_balance(client: SteamBot):
@@ -111,18 +114,20 @@ async def get_items_to_buy(client: SteamBot):
     print(f'Items to buy in steam were gained')
 
 
+#Getting all unfinished trades from tm
 async def get_trades(client: SteamBot):
     url = f'https://market.csgo.com/api/v2/trades?key={client.tmApiKey}&extended=1'
-    print('start gaining trades')
+    # logging.info(f'Start getting trade list of {client.login}')
     while True:
         try:
             async with app_storage['session'].get(url=url) as response:
                 if response.status == 200:
+                    # logging.info(f'Trade list of {client.login} has gathered')
                     return await response.json()
+                await asyncio.sleep(3)
         except Exception as ex:
-            print(f'Failed getting trades {time.time()} -> {ex}')
+            logging.error(f'Error while getting trades of {client.login}: ', exc_info=True)
             await asyncio.sleep(3)
-    print('trades were gained')
 
 
 async def get_tm_cases_info(client):
@@ -193,7 +198,7 @@ async def buy_cases(client: SteamBot):
 
 async def create_listings_by_list(client: SteamBot, items: list):
     for item in items:
-        min_price = await get_min_item_bid_price(client, item["market_hash_name"])
+        min_price = await get_min_item_bid_price(client, item['market_hash_name'])
         buy_price = await db.get_bought_item_price(client.login, item['market_hash_name'])
         if min_price >= buy_price * config.ratioForSkinsToBy:
             await set_item_listing_price(client, item['id'], min_price - 1)
@@ -249,9 +254,9 @@ async def get_min_item_bid_price(client: SteamBot, market_name: str):
 
 
 async def set_item_listing_price(client: SteamBot, item_id: str, price: int):
-    while True:
-        url = f'https://market.csgo.com/api/v2/set-price?key={client.tmApiKey}' \
+    url = f'https://market.csgo.com/api/v2/set-price?key={client.tmApiKey}' \
               f'&item_id={item_id}&price={price - 1}&cur=USD'
+    while True:
         async with app_storage['session'].get(url=url) as response:
             if response.status == 200:
                 answer = await response.json()

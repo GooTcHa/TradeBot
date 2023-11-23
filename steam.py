@@ -86,7 +86,7 @@ class SteamBot:
             await asyncio.sleep(6)
 
     async def accept_trades(self, trades):
-        print('start accepting trades')
+
         steam_trades = self.steam_client.get_trade_offers()['response']['trade_offers_received']
         if len(steam_trades) != 0:
             await asyncio.sleep(5)
@@ -104,8 +104,13 @@ class SteamBot:
         return self.steam_client.market.get_my_market_listings()
 
     async def create_buy_orders(self, balance):
-        with open('items_to_buy.json') as f:
-            items = json.load(f)
+        while True:
+            with open('items_to_buy.json') as f:
+                items = json.load(f)
+            if items['date'] > time.time() - 86_400:
+                break
+            else:
+                await asyncio.sleep(3_600)
         price: int
         for key in items['ratio'].keys():
             for item in items['ratio'][key].keys():
