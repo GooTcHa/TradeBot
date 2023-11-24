@@ -302,9 +302,9 @@ async def get_history(client: SteamBot) -> list:
 
 async def check_deals(client: SteamBot) -> None:
     history = await get_history(client)
-    with open('info.json', 'wt') as f:
-        json.dump(history, f, indent= 4)
-    return None
+    # with open('info.json', 'wt') as f:
+    #     json.dump(history, f, indent= 4)
+    # return None
     with open(f'latest_tm_deals/{client.login}.txt', 'r') as f:
         last_deal = f.readline().strip('\n')
     if last_deal != history[0]['item_id']:
