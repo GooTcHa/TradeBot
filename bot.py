@@ -3,20 +3,22 @@ import time
 import asyncio
 from aiohttp import ClientSession
 import logging
+from sys import argv
 
 import config
 import csgotm
 from steam import SteamBot
 
 app_storage = {}
-gotchaSC = SteamBot(config.logInfoList['zybinsteam2'])
+login = argv[1]
+client = SteamBot(config.logInfoList[login])
 logging.basicConfig(level=logging.INFO, filename="logs/bot.log", filemode="w",
                     format="%(asctime)s %(levelname)s %(message)s")
 
 
 #Checking in/outcoming trades
 #Approximate time 3s.
-async def check_trades(client: SteamBot):
+async def check_trades():
     print('check_trades')
     logging.info(f'Check trades of {client.login} lunched')
     while True:
@@ -29,7 +31,7 @@ async def check_trades(client: SteamBot):
 
 #Getting steam balance and creating buy orders if balance > 20$
 #Approximately 110s
-async def check_steam_balance(client: SteamBot):
+async def check_steam_balance():
     print('check_steam_balance')
     while True:
         listings = (await client.get_steam_listings())['buy_orders']
@@ -39,9 +41,10 @@ async def check_steam_balance(client: SteamBot):
             await client.create_buy_orders(balance * 1000)
         await asyncio.sleep(43200)
 
+
 #Check tm balance and create cases buy order on tm
 #~170s.
-async def check_tm_balance(client) -> None:
+async def check_tm_balance() -> None:
     print('check_tm_balance')
     while True:
         balance = await csgotm.get_balance(client)
@@ -52,7 +55,7 @@ async def check_tm_balance(client) -> None:
 
 #Find cases and sell them
 #Approximately 10s
-async def check_cases_in_steam_inventory(client):
+async def check_cases_in_steam_inventory():
     print('check_cases_in_steam_inventory')
     while True:
         t = time.time()
@@ -63,16 +66,16 @@ async def check_cases_in_steam_inventory(client):
 
 #Create sell orders on tm
 #~15s
-async def check_items_to_sell_on_tm(client: SteamBot):
+async def check_items_to_sell_on_tm():
     print('check_items_to_sell_on_tm')
     while True:
         await csgotm.create_new_listings_on_tm(client)
-        await asyncio.sleep(86_400)
+        await asyncio.sleep(44_000)
 
 
 #Check if sell price is close to current
 #~20s
-async def check_steam_listings(client: SteamBot):
+async def check_steam_listings():
     print('check_steam_listings')
     cmp_date: datetime.date
     while True:
@@ -84,7 +87,7 @@ async def check_steam_listings(client: SteamBot):
 
 #Check selling items
 #~10
-async def check_tm_listings(client: SteamBot):
+async def check_tm_listings():
     while True:
         await csgotm.get_history(client)
         t = time.time()
@@ -95,24 +98,23 @@ async def check_tm_listings(client: SteamBot):
 
 #Get latest deals in steam
 #~5
-async def check_steam_deals(client: SteamBot):
+async def check_steam_deals():
     print('check_steam_deals')
     while True:
         await client.check_deals()
-        await asyncio.sleep(3600)
+        await asyncio.sleep(3_600)
 
 
 #Get latest deals in tm
 #~5
-async def check_tm_deals(client: SteamBot):
+async def check_tm_deals():
     print('check_tm_deals')
     while True:
         await csgotm.check_deals(client)
-        break
-        await asyncio.sleep(600)
+        await asyncio.sleep(3_600)
 
 
-async def ping_pong(client: SteamBot) -> None:
+async def ping_pong() -> None:
     print('ping_pong')
     url = f'https://market.csgo.com/api/v2/ping?key={client.tmApiKey}'
     while True:
@@ -130,19 +132,17 @@ async def main():
     app_storage['session'] = ClientSession()
     csgotm.app_storage['session'] = app_storage['session']
     async with app_storage['session']:
-        tasks = []
-        # tasks = [asyncio.create_task(ping_pong(client=gotchaSC)),
-        #          asyncio.create_task(check_trades(client=gotchaSC)),
-        #          asyncio.create_task(check_tm_balance(client=gotchaSC)),
-        #          asyncio.create_task(check_steam_balance(client=gotchaSC)),
-        #          asyncio.create_task(check_steam_listings(client=gotchaSC)),
-        #          asyncio.create_task(check_items_to_sell_on_tm(client=gotchaSC)),
-        #          asyncio.create_task(get_items_to_buy_in_steam(client=gotchaSC)),
-        #          asyncio.create_task(check_cases_in_steam_inventory(client=gotchaSC))]
-        # tasks.append(asyncio.create_task(check_trades(client=gotchaSC)))
-        # tasks.append(asyncio.create_task(get_items_to_buy_in_steam(client=gotchaSC)))
-        tasks.append(asyncio.create_task(check_tm_listings(client=gotchaSC)))
-
+        tasks = [asyncio.create_task(ping_pong()),
+                 asyncio.create_task(check_trades()),
+                 asyncio.create_task(check_tm_balance()),
+                 asyncio.create_task(check_steam_balance()),
+                 asyncio.create_task(check_tm_listings()),
+                 asyncio.create_task(check_steam_listings()),
+                 asyncio.create_task(check_steam_deals()),
+                 asyncio.create_task(check_tm_deals()),
+                 asyncio.create_task(check_items_to_sell_on_tm()),
+                 asyncio.create_task(check_cases_in_steam_inventory())]
+        # tasks = [asyncio.create_task(check_tm_deals())]
         await asyncio.gather(*tasks)
 
 

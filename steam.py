@@ -18,7 +18,7 @@ async def get_steam_cases_info(cases) -> dict:
     while True:
         with open('steam_cases_ratio.json', 'r') as f:
             saved_data = json.load(f)
-        if saved_data['date'] < time.time() - 86_400:
+        if saved_data['date'] < time.time() - 45_000:
             await asyncio.sleep(3_600)
         else:
             break
@@ -60,6 +60,8 @@ class SteamBot:
             print("Saving session")
             with open(accountDetails['steamSession'], 'wb') as f:
                 pickle.dump(self.steam_client, f)
+        if config.proxis[self.login].get('http') is not None:
+            self.steam_client.set_proxies(config.proxis[self.login])
 
     async def get_steam_items_to_buy_info(self, items: dict, items_to_buy: dict):
         response: json
@@ -107,7 +109,7 @@ class SteamBot:
         while True:
             with open('items_to_buy.json') as f:
                 items = json.load(f)
-            if items['date'] > time.time() - 86_400:
+            if items['date'] > time.time() - 45_000:
                 break
             else:
                 await asyncio.sleep(3_600)
@@ -166,7 +168,7 @@ class SteamBot:
             while True:
                 with open('steam_cases_ratio.json') as f:
                     prices = json.load(f)
-                if prices['date'] < time.time() - 86_400:
+                if prices['date'] < time.time() - 45_000:
                     await asyncio.sleep(3600)
                 else:
                     break
