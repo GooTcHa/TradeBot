@@ -54,7 +54,7 @@ async def add_bought_item(account: str, market_hash_name: str, price: float):
 async def add_sale_info(account, market_hash_name: str, received: float) -> None:
     async with aiosqlite.connect('db_tables/db.db') as db:
         async with db.execute('SELECT * FROM bought_items WHERE account="{0}" AND name="{1}" '
-                              'AND time=(SELECT min(time) FROM bought_items);'.format(account, market_hash_name)) as cur:
+                              'AND time=(SELECT min(time) FROM bought_items WHERE name="{1}");'.format(account, market_hash_name)) as cur:
             item = await cur.fetchone()
         if item is not None:
             await db.execute('DELETE FROM bought_items WHERE account="{0}" AND name="{1}" '
@@ -75,11 +75,11 @@ async def get_bought_item_count(market_hash_name: str) -> int:
 async def get_bought_item_price(account: str, market_name: str) -> float:
     async with aiosqlite.connect('db_tables/db.db') as db:
         async with db.execute('SELECT * FROM bought_items WHERE name="{0}" AND account="{1}" AND '
-                              'time=(SELECT min(time) FROM bought_items);'.format(market_name, account)) as cur:
+                              'time=(SELECT min(time) FROM bought_items WHERE name="{0}");'.format(market_name, account)) as cur:
             item = await cur.fetchone()
             if item is not None:
                 return item[2]
             else:
                 return 0.0
 
-# print(asyncio.run(get_bought_item_price('___stewart___', 'P250 | See Ya Later (Minimal Wear)')))
+# print(asyncio.run(get_bought_item_price('___stewart___', 'M4A4 | Neo-Noir (Field-Tested)')))

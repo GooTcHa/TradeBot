@@ -12,7 +12,7 @@ from steam import SteamBot
 app_storage = {}
 login = argv[1]
 client = SteamBot(config.logInfoList[login])
-logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+# logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 
 #Checking in/outcoming trades
