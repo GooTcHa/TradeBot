@@ -149,13 +149,13 @@ async def main():
     async with app_storage['session']:
         tasks = [asyncio.create_task(ping_pong()),
                  asyncio.create_task(check_trades()),
+                 asyncio.create_task(check_items_to_sell_on_tm()),
                  asyncio.create_task(check_tm_balance()),
                  asyncio.create_task(check_steam_balance()),
                  asyncio.create_task(check_tm_listings()),
                  asyncio.create_task(check_steam_listings()),
                  asyncio.create_task(check_steam_deals()),
                  asyncio.create_task(check_tm_deals()),
-                 asyncio.create_task(check_items_to_sell_on_tm()),
                  asyncio.create_task(check_cases_in_steam_inventory())]
         await asyncio.gather(*tasks)
 

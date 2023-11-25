@@ -75,11 +75,11 @@ async def get_bought_item_count(market_hash_name: str) -> int:
 async def get_bought_item_price(account: str, market_name: str) -> float:
     async with aiosqlite.connect('db_tables/db.db') as db:
         async with db.execute('SELECT * FROM bought_items WHERE name="{0}" AND account="{1}" AND '
-                              'time<(SELECT min(time) FROM bought_items);'.format(market_name, account)) as cur:
+                              'time=(SELECT min(time) FROM bought_items);'.format(market_name, account)) as cur:
             item = await cur.fetchone()
             if item is not None:
                 return item[2]
             else:
                 return 0.0
 
-# print(asyncio.run(get_bought_item_count('Glock-18 | Reactor (Field-Tested)')))
+# print(asyncio.run(get_bought_item_price('___stewart___', 'P250 | See Ya Later (Minimal Wear)')))

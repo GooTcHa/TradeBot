@@ -17,8 +17,8 @@ import steam
 from steam import SteamBot
 
 app_storage = {}
-logging.basicConfig(level=logging.INFO, filename="logs/csgotm.log", filemode="w",
-                    format="%(asctime)s %(levelname)s %(message)s")
+# logging.basicConfig(level=logging.INFO, filename="logs/csgotm.log", filemode="w",
+#                     format="%(asctime)s %(levelname)s %(message)s")
 
 
 async def get_balance(client: SteamBot):
@@ -200,8 +200,12 @@ async def create_listings_by_list(client: SteamBot, items: list):
     for item in items:
         min_price = await get_min_item_bid_price(client, item['market_hash_name'])
         buy_price = await db.get_bought_item_price(client.login, item['market_hash_name'])
-        if min_price >= buy_price * config.ratioForSkinsToBy:
+        min_acceptable_price = buy_price * config.ratioForSkinsToBy * 1000
+        print(f'{item["market_hash_name"]} --> {min_price} --> {buy_price} --> {min_acceptable_price}')
+        if min_price >= min_acceptable_price:
             await set_item_listing_price(client, item['id'], min_price - 1)
+        else:
+            await set_item_listing_price(client, item['id'], int(min_acceptable_price))
 
 
 async def update_inventory(client: SteamBot) -> bool:
@@ -269,6 +273,7 @@ async def set_item_listing_price(client: SteamBot, item_id: str, price: int):
 async def create_new_listings_on_tm(client: SteamBot):
     if await update_inventory(client):
         items = await get_unlisted_items(client)
+        print(items)
         listed_items = await get_listed_items(client)
         items_to_buy = await calculations.find_unique_items(items=items, listed_items=listed_items)
         await create_listings_by_list(client=client, items=items_to_buy)
