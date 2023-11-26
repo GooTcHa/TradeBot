@@ -64,6 +64,18 @@ class SteamBot:
         if config.proxis[self.login].get('http') is not None:
             self.steam_client.set_proxies(config.proxis[self.login])
 
+    async def check_session(self):
+        return self.steam_client.is_session_alive()
+
+    async def update_session(self):
+        print('Resinging in...')
+        self.steam_client = SteamClient(self.accountDetails['steamApiKey'])
+        self.steam_client.login(self.accountDetails['login'], self.accountDetails['password'],
+                                self.accountDetails['maFile'])  # авторизируемся в аккаунте
+        print("Saving session")
+        with open(self.accountDetails['steamSession'], 'wb') as f:
+            pickle.dump(self.steam_client, f)
+
     async def get_steam_items_to_buy_info(self, items: dict, items_to_buy: dict):
         response: json
         tDate: datetime.date

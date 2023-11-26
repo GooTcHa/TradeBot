@@ -80,29 +80,21 @@ async def check_items_to_sell_on_tm():
         await asyncio.sleep(7_200)
 
 
-#Check if sell price is close to current
-#~20s
-async def check_steam_listings():
-    logging.info(f'check_steam_listings of {client.login} lunched')
-    while True:
-        logging.info(f'Start checking steam listings of {client.login}')
-        cmp_date: datetime.date
-        listings = (await client.get_steam_listings())['sell_listings']
-        if len(listings.keys()):
-            await client.change_case_listings(listings=listings)
-        logging.info(f'Finish checking steam listings of {client.login}')
-        await asyncio.sleep(86_400)
-
-
 #Check selling items
-#~10
-async def check_tm_listings():
+#~30
+async def check_listings():
     logging.info(f'check_tm_listings of {client.login} lunched')
     while True:
         logging.info(f'Start checking tm listings of {client.login}')
         await csgotm.get_history(client)
         await csgotm.check_listings(client)
         logging.info(f'Finish checking tm listings of {client.login}')
+        logging.info(f'Start checking steam listings of {client.login}')
+        cmp_date: datetime.date
+        listings = (await client.get_steam_listings())['sell_listings']
+        if len(listings.keys()):
+            await client.change_case_listings(listings=listings)
+        logging.info(f'Finish checking steam listings of {client.login}')
         await asyncio.sleep(14_400)
 
 
@@ -128,20 +120,17 @@ async def check_tm_deals():
         await asyncio.sleep(3_600)
 
 
-async def ping_pong() -> None:
+async def turn_on_sellings() -> None:
     logging.info(f'ping_pong of {client.login} lunched')
-    url = f'https://market.csgo.com/api/v2/ping?key={client.tmApiKey}'
+    await csgotm.ping_pong(client)
+    await asyncio.sleep(150)
+
+
+async def check_session():
     while True:
-        logging.info(f'ping of {client.login}')
-        while True:
-            async with app_storage['session'].get(url=url) as response:
-                if response.status == 200:
-                    answer = await response.json()
-                    if answer["success"]:
-                        break
-                await asyncio.sleep(3)
-        logging.info(f'pong of {client.login}')
-        await asyncio.sleep(150)
+        if not await client.check_session():
+            await client.update_session()
+        await asyncio.sleep(86_000)
 
 
 async def main():
@@ -149,16 +138,16 @@ async def main():
     csgotm.app_storage['session'] = app_storage['session']
     csgotm.app_storage['proxy'] = config.proxis[login]['http']
     async with app_storage['session']:
-        tasks = [asyncio.create_task(ping_pong()),
+        tasks = [asyncio.create_task(turn_on_sellings()),
                  asyncio.create_task(check_trades()),
                  asyncio.create_task(check_items_to_sell_on_tm()),
                  asyncio.create_task(check_tm_balance()),
                  asyncio.create_task(check_steam_balance()),
-                 asyncio.create_task(check_tm_listings()),
-                 asyncio.create_task(check_steam_listings()),
+                 asyncio.create_task(check_listings()),
                  asyncio.create_task(check_steam_deals()),
                  asyncio.create_task(check_tm_deals()),
-                 asyncio.create_task(check_cases_in_steam_inventory())]
+                 asyncio.create_task(check_cases_in_steam_inventory()),
+                 asyncio.create_task(check_session())]
         await send_message(f'Account {login} is running!')
         try:
             await asyncio.gather(*tasks)

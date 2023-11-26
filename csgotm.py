@@ -323,3 +323,16 @@ async def check_deals(client: SteamBot) -> None:
                 await db.add_bought_item(client.login, deal['market_hash_name'], int(deal['paid']) / 1000.0)
             else:
                 await db.add_sale_info(client.login, deal['market_hash_name'], int(deal['received']) / 1000.0)
+
+
+async def ping_pong(client: SteamBot) -> None:
+    url = f'https://market.csgo.com/api/v2/ping?key={client.tmApiKey}'
+    while True:
+        logging.info(f'ping of {client.login}')
+        while True:
+            async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
+                if response.status == 200:
+                    answer = await response.json()
+                    if answer["success"]:
+                        break
+                await asyncio.sleep(3)
