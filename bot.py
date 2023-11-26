@@ -54,6 +54,7 @@ async def check_tm_balance() -> None:
         balance = await csgotm.get_balance(client)
         if balance >= 4:
             await csgotm.buy_cases(client)
+        #TODO delete sell orders
         logging.info(f'Tm balance of {client.login} was got')
         await asyncio.sleep(3_600)
 

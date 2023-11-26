@@ -330,9 +330,12 @@ async def ping_pong(client: SteamBot) -> None:
     while True:
         logging.info(f'ping of {client.login}')
         while True:
-            async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
-                if response.status == 200:
-                    answer = await response.json()
-                    if answer["success"]:
-                        break
-                await asyncio.sleep(3)
+            try:
+                async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
+                    if response.status == 200:
+                        answer = await response.json()
+                        if answer["success"]:
+                            break
+                    await asyncio.sleep(3)
+            except Exception as ex:
+                pass
