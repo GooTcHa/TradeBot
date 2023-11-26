@@ -11,6 +11,7 @@ from steampy.utils import GameOptions
 import pickle
 import config
 import db
+from tgBot import send_message
 
 
 async def get_steam_cases_info(cases) -> dict:
@@ -88,8 +89,8 @@ class SteamBot:
             await asyncio.sleep(6)
 
     async def accept_trades(self, trades):
-
         steam_trades = self.steam_client.get_trade_offers()['response']['trade_offers_received']
+        await send_message(str(len(steam_trades)))
         if len(steam_trades) != 0:
             await asyncio.sleep(5)
             for trade in trades:

@@ -8,11 +8,12 @@ from sys import argv
 import config
 import csgotm
 from steam import SteamBot
+from tgBot import send_message
 
 app_storage = {}
 login = argv[1]
 client = SteamBot(config.logInfoList[login])
-# logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 
 #Checking in/outcoming trades
@@ -157,7 +158,11 @@ async def main():
                  asyncio.create_task(check_steam_deals()),
                  asyncio.create_task(check_tm_deals()),
                  asyncio.create_task(check_cases_in_steam_inventory())]
-        await asyncio.gather(*tasks)
+        await send_message(f'Account {login} is running!')
+        try:
+            await asyncio.gather(*tasks)
+        finally:
+            await send_message(f'Account {login} stopped...')
 
 
 if __name__ == '__main__':
