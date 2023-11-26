@@ -24,7 +24,7 @@ app_storage = {}
 async def get_balance(client: SteamBot):
     url = f'https://market.csgo.com/api/v2/get-money?key={client.tmApiKey}'
     while True:
-        async with app_storage['session'].get(url=url) as response:
+        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
             if response.status == 200:
                 answer = await response.json()
                 if answer["success"]:
@@ -121,7 +121,7 @@ async def get_trades(client: SteamBot):
     url = f'https://market.csgo.com/api/v2/trades?key={client.tmApiKey}&extended=1'
     while True:
         try:
-            async with app_storage['session'].get(url=url) as response:
+            async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
                 if response.status == 200:
                     return await response.json()
                 await asyncio.sleep(3)
@@ -136,7 +136,7 @@ async def get_tm_cases_info(client):
         url = f'https://market.csgo.com/api/v2/get-list-items-info?key={client.tmApiKey}&list_hash_name[]={case}'
         while True:
             try:
-                async with app_storage['session'].get(url=url) as response:
+                async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
                     if response.status == 200:
                         answer = await response.json()
                         if answer["success"]:
@@ -151,7 +151,7 @@ async def get_tm_cases_info(client):
         url = f'https://market.csgo.com/api/v2/search-item-by-hash-name-specific?key={client.tmApiKey}&hash_name={case}'
         while True:
             try:
-                async with app_storage['session'].get(url=url) as response:
+                async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
                     if response.status == 200:
                         answer = await response.json()
                         if answer["success"]:
@@ -175,7 +175,7 @@ async def create_case_buy_orders(client: SteamBot, cases: dict):
               f'&count=100&price={int(cases.get(key)[0] * 1000)}'
         while True:
             try:
-                async with app_storage['session'].get(url=url) as response:
+                async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
                     if response.status == 200:
                         answer = await response.json(content_type=None)
                         if answer['success']:
@@ -211,7 +211,7 @@ async def create_listings_by_list(client: SteamBot, items: list):
 async def update_inventory(client: SteamBot) -> bool:
     url = f'https://market.csgo.com/api/v2/update-inventory?key={client.tmApiKey}'
     while True:
-        async with app_storage['session'].get(url=url) as response:
+        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
             if response.status == 200:
                 if (await response.json())["success"]:
                     return True
@@ -222,7 +222,7 @@ async def get_unlisted_items(client: SteamBot):
     url = f'https://market.csgo.com/api/v2/my-inventory?key={client.tmApiKey}'
     items = []
     while True:
-        async with app_storage['session'].get(url=url) as response:
+        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
             if response.status == 200:
                 answer = await response.json()
                 if answer["success"]:
@@ -237,7 +237,7 @@ async def get_unlisted_items(client: SteamBot):
 async def get_listed_items(client: SteamBot):
     while True:
         url = f'https://market.csgo.com/api/v2/items?key={client.tmApiKey}'
-        async with app_storage['session'].get(url=url) as response:
+        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
             if response.status == 200:
                 answer = await response.json()
                 if answer["success"]:
@@ -249,7 +249,7 @@ async def get_min_item_bid_price(client: SteamBot, market_name: str):
     url = f'https://market.csgo.com/api/v2/search-item-by-hash-name-specific?key={client.tmApiKey}&' \
           f'hash_name={market_name}'
     while True:
-        async with app_storage['session'].get(url=url) as response:
+        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
             if response.status == 200:
                 answer = await response.json()
                 if answer["success"]:
@@ -262,7 +262,7 @@ async def set_item_listing_price(client: SteamBot, item_id: str, price: int):
     # url = f'https://market.csgo.com/api/v2/set-price?key={client.tmApiKey}' \
     #           f'&item_id={item_id}&price={price - 1}&cur=USD'
     while True:
-        async with app_storage['session'].get(url=url) as response:
+        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
             if response.status == 200:
                 answer = await response.json()
                 if answer["success"]:
@@ -294,7 +294,7 @@ async def check_listings(client: SteamBot):
 async def get_history(client: SteamBot) -> list:
     while True:
         url = f'https://market.csgo.com/api/v2/history?key={client.tmApiKey}'
-        async with app_storage['session'].get(url=url) as response:
+        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
             if response.status == 200:
                 answer = await response.json()
                 if answer["success"]:
