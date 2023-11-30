@@ -54,7 +54,8 @@ async def check_tm_balance() -> None:
         balance = await csgotm.get_balance(client)
         if balance >= 4:
             await csgotm.buy_cases(client)
-        #TODO delete sell orders
+        else:
+            await csgotm.delete_buy_orders(client)
         logging.info(f'Tm balance of {client.login} was got')
         await asyncio.sleep(3_600)
 
@@ -138,9 +139,9 @@ async def main():
                  asyncio.create_task(check_steam_balance()),
                  asyncio.create_task(check_tm_listings()),
                  asyncio.create_task(check_steam_listings()),
-                 asyncio.create_task(check_deals()),
-                 asyncio.create_task(check_session())]
+                 asyncio.create_task(check_deals())]
         await send_message(f'Account {login} is running!')
+        # tasks = [asyncio.create_task(check_deals())]
         try:
             await asyncio.gather(*tasks)
         finally:

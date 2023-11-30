@@ -43,7 +43,7 @@ class SteamBot:
             with open(accountDetails['steamSession'], 'rb') as f:
                 self.steam_client = pickle.load(f)
                 print(self.steam_client.is_session_alive())
-                await self.check_session()
+                asyncio.run(self.check_session())
         else:
             print("You not authorized, trying to login into Steam")
             print("Signing in steam account")
@@ -242,6 +242,9 @@ class SteamBot:
         response_soup = bs4.BeautifulSoup(response['results_html'], "html.parser")
         history = response_soup.find_all('div', class_='market_listing_row market_recent_listing_row')
         items = response['assets']['730']['2']
+        # with open('info.json', 'wt') as f:
+        #     json.dump(items, f, indent=4)
+        # return None
         with open('latest_steam_deals/___stewart___.txt', 'r') as f:
             latest_deal = f.readline().strip('\n')
         keys_list = list(items.keys())
