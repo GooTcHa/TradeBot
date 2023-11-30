@@ -125,13 +125,6 @@ async def turn_on_sellings() -> None:
     await asyncio.sleep(150)
 
 
-async def check_session():
-    while True:
-        if not await client.check_session():
-            await client.update_session()
-        await asyncio.sleep(86_000)
-
-
 async def main():
     app_storage['session'] = ClientSession()
     csgotm.app_storage['session'] = app_storage['session']

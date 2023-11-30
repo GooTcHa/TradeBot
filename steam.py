@@ -43,15 +43,7 @@ class SteamBot:
             with open(accountDetails['steamSession'], 'rb') as f:
                 self.steam_client = pickle.load(f)
                 print(self.steam_client.is_session_alive())
-                if not self.steam_client.is_session_alive():
-                    print('Resinging in...')
-                    self.steam_client = SteamClient(accountDetails['steamApiKey'])
-                    self.steam_client.login(accountDetails['login'], accountDetails['password'],
-                                            accountDetails['maFile'])  # авторизируемся в аккаунте
-                    print("Saving session")
-                    with open(accountDetails['steamSession'], 'wb') as f:
-                        pickle.dump(self.steam_client, f)
-
+                await self.check_session()
         else:
             print("You not authorized, trying to login into Steam")
             print("Signing in steam account")
@@ -64,10 +56,11 @@ class SteamBot:
         if config.proxis[self.login].get('http') is not None:
             self.steam_client.set_proxies(config.proxis[self.login])
 
-    async def check_session(self):
-        return self.steam_client.is_session_alive()
+    async def check_session(self) -> None:
+        while not self.steam_client.is_session_alive():
+            self.update_session()
 
-    async def update_session(self):
+    def update_session(self):
         print('Resinging in...')
         self.steam_client = SteamClient(self.accountDetails['steamApiKey'])
         self.steam_client.login(self.accountDetails['login'], self.accountDetails['password'],
@@ -77,6 +70,7 @@ class SteamBot:
             pickle.dump(self.steam_client, f)
 
     async def get_steam_items_to_buy_info(self, items: dict, items_to_buy: dict):
+        await self.check_session()
         response: json
         tDate: datetime.date
         price: float
@@ -101,6 +95,7 @@ class SteamBot:
             await asyncio.sleep(6)
 
     async def accept_trades(self, trades):
+        await self.check_session()
         steam_trades = self.steam_client.get_trade_offers()['response']['trade_offers_received']
         await send_message(str(len(steam_trades)))
         if len(steam_trades) != 0:
@@ -116,9 +111,11 @@ class SteamBot:
         print('trades were accepted')
 
     async def get_steam_listings(self):
+        await self.check_session()
         return self.steam_client.market.get_my_market_listings()
 
     async def create_buy_orders(self, balance):
+        await self.check_session()
         while True:
             with open('items_to_buy.json') as f:
                 items = json.load(f)
@@ -146,9 +143,11 @@ class SteamBot:
                     await asyncio.sleep(1)
 
     async def get_balance(self):
+        await self.check_session()
         return float(self.steam_client.get_wallet_balance())
 
     async def get_max_steam_cases_price(self):
+        await self.check_session()
         priceHistory = []
         response: json
         data_to_save = {'date': time.time(),
@@ -176,6 +175,7 @@ class SteamBot:
         return data_to_save
 
     async def sell_cases_from_inventory(self):
+        await self.check_session()
         items = self.steam_client.get_my_inventory(game=GameOptions.CS)
         if len(items.keys()) != 0:
             while True:
@@ -194,6 +194,7 @@ class SteamBot:
                     await asyncio.sleep(2)
 
     async def change_case_listings(self, listings: dict):
+        await self.check_session()
         while True:
             with open('steam_cases_ratio.json', 'r') as f:
                 prices = json.load(f)
@@ -224,23 +225,23 @@ class SteamBot:
                 await asyncio.sleep(3)
 
     async def get_inventory(self):
+        await self.check_session()
         items = self.steam_client.get_my_inventory(game=GameOptions.CS)
         with open('result.json', 'wt') as f:
             json.dump(items, f, indent=4)
 
     async def get_completed_steam_buy_orders(self) -> json:
+        await self.check_session()
         url = 'https://steamcommunity.com/market/myhistory?count=50'
         response = self.steam_client.session.get(url)
         return response.json()
 
     async def check_deals(self):
+        await self.check_session()
         response = await self.get_completed_steam_buy_orders()
         response_soup = bs4.BeautifulSoup(response['results_html'], "html.parser")
         history = response_soup.find_all('div', class_='market_listing_row market_recent_listing_row')
         items = response['assets']['730']['2']
-        # with open('info.json', 'wt') as f:
-        #     json.dump(items, f, indent=4)
-        # return None
         with open('latest_steam_deals/___stewart___.txt', 'r') as f:
             latest_deal = f.readline().strip('\n')
         keys_list = list(items.keys())
@@ -255,16 +256,17 @@ class SteamBot:
                     state == '' or state == ' '):
                 j += 1
                 state = history[j].find('div', class_='market_listing_left_cell market_listing_gainorloss').text.strip()
-            price = float(
-                history[j].find('span', class_='market_listing_price').text.strip().strip('+- $USD\n').replace(',',
-                                                                                                               '.'))
-            j += 1
-            if state == '+':
-                await db.add_bought_item(self.login, items[keys_list[i]]['market_hash_name'], price)
-            else:
-                await db.add_sale_info(self.login, items[keys_list[i]]['market_hash_name'], price)
+            price = history[j].find('span', class_='market_listing_price').text.strip().strip('+- $USD\n').replace(',', '.')
+            if price != '':
+                price = float(price)
+                j += 1
+                if state == '+':
+                    await db.add_bought_item(self.login, items[keys_list[i]]['market_hash_name'], price)
+                elif state == '-':
+                    await db.add_sale_info(self.login, items[keys_list[i]]['market_hash_name'], price)
 
     async def delete_buy_orders(self, orders):
+        await self.check_session()
         for order in orders:
             self.steam_client.market.cancel_buy_order(order)
             await asyncio.sleep(1)
