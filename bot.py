@@ -81,43 +81,41 @@ async def check_items_to_sell_on_tm():
         await asyncio.sleep(7_200)
 
 
-#Check selling items
-#~30
-async def check_listings():
-    logging.info(f'check_tm_listings of {client.login} lunched')
+#Check if sell price is close to current
+#~20s
+async def check_steam_listings():
+    logging.info(f'check_steam_listings of {client.login} lunched')
     while True:
-        logging.info(f'Start checking tm listings of {client.login}')
-        await csgotm.get_history(client)
-        await csgotm.check_listings(client)
-        logging.info(f'Finish checking tm listings of {client.login}')
         logging.info(f'Start checking steam listings of {client.login}')
         cmp_date: datetime.date
         listings = (await client.get_steam_listings())['sell_listings']
         if len(listings.keys()):
             await client.change_case_listings(listings=listings)
         logging.info(f'Finish checking steam listings of {client.login}')
+        await asyncio.sleep(86_400)
+
+
+#Check selling items
+#~10
+async def check_tm_listings():
+    logging.info(f'check_tm_listings of {client.login} lunched')
+    while True:
+        logging.info(f'Start checking tm listings of {client.login}')
+        await csgotm.get_history(client)
+        await csgotm.check_listings(client)
+        logging.info(f'Finish checking tm listings of {client.login}')
         await asyncio.sleep(14_400)
 
 
-#Get latest deals in steam
-#~5
-async def check_steam_deals():
-    logging.info(f'check_steam_deals of {client.login} lunched')
+#Get deals first on tm then on steam
+#~10s
+async def check_deals():
+    logging.info(f'check_deals of {client.login} lunched')
     while True:
-        logging.info(f'Start checking steam deals of {client.login}')
-        await client.check_deals()
-        logging.info(f'Finish checking steam deals of {client.login}')
-        await asyncio.sleep(3_600)
-
-
-#Get latest deals in tm
-#~5
-async def check_tm_deals():
-    logging.info(f'check_tm_deals of {client.login} lunched')
-    while True:
-        logging.info(f'Start checking tm deals of {client.login}')
+        logging.info(f'Start checking deals of {client.login}')
         await csgotm.check_deals(client)
-        logging.info(f'Finish checking tm deals of {client.login}')
+        await client.check_deals()
+        logging.info(f'Finish checking deals of {client.login}')
         await asyncio.sleep(3_600)
 
 
@@ -141,13 +139,13 @@ async def main():
     async with app_storage['session']:
         tasks = [asyncio.create_task(turn_on_sellings()),
                  asyncio.create_task(check_trades()),
+                 asyncio.create_task(check_cases_in_steam_inventory()),
                  asyncio.create_task(check_items_to_sell_on_tm()),
                  asyncio.create_task(check_tm_balance()),
                  asyncio.create_task(check_steam_balance()),
-                 asyncio.create_task(check_listings()),
-                 asyncio.create_task(check_steam_deals()),
-                 asyncio.create_task(check_tm_deals()),
-                 asyncio.create_task(check_cases_in_steam_inventory()),
+                 asyncio.create_task(check_tm_listings()),
+                 asyncio.create_task(check_steam_listings()),
+                 asyncio.create_task(check_deals()),
                  asyncio.create_task(check_session())]
         await send_message(f'Account {login} is running!')
         try:
