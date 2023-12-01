@@ -39,7 +39,7 @@ async def check_steam_balance():
         listings = (await client.get_steam_listings())['buy_orders']
         await client.delete_buy_orders(listings.keys())
         balance = await client.get_balance()
-        if balance > 20:
+        if balance > 5:
             await client.create_buy_orders(balance * 100)
         logging.info(f'Balance of {client.login} was got')
         await asyncio.sleep(43_200)
@@ -52,7 +52,7 @@ async def check_tm_balance() -> None:
     while True:
         logging.info(f'Getting tm balance of {client.login}')
         balance = await csgotm.get_balance(client)
-        if balance >= 4:
+        if balance >= 3:
             await csgotm.buy_cases(client)
         else:
             await csgotm.delete_buy_orders(client)

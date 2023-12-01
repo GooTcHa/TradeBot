@@ -1,8 +1,8 @@
 import os
 import config
 
-# os.system("start cmd /k python priceSearcher.py zybinsteam2")
-os.system("start cmd /k python bot.py ___stewart___")
+os.system("start cmd /k python priceSearcher.py zybinsteam2")
+# os.system("start cmd /k python bot.py ___stewart___")
 #
 
 # for login in config.logInfoList.keys():

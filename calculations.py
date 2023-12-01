@@ -38,7 +38,7 @@ async def get_average_item_steam_price(prices) -> float:
             week_t += 1
         else:
             break
-    return min(day_s / day_t, week_s / week_t)
+    return (day_s * 0.6 / day_t + week_s * 0.4 / week_t) / 2.0
 
 
 async def find_unique_items(items, listed_items):
