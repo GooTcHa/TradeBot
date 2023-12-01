@@ -35,7 +35,6 @@ async def get_steam_cases_price() -> None:
             t = time.time()
             await client.get_max_steam_cases_price()
             print(f'finish {time.time() - t}')
-        # break
             await asyncio.sleep(44_000)
         else:
             await asyncio.sleep(3_600)
@@ -44,11 +43,12 @@ async def get_steam_cases_price() -> None:
 async def main():
     app_storage['session'] = ClientSession()
     csgotm.app_storage['session'] = app_storage['session']
-    tasks = [
-        asyncio.create_task(get_items_to_buy_in_steam()),
-        asyncio.create_task(get_steam_cases_price())
-    ]
-    await asyncio.gather(*tasks)
+    async with app_storage['session']:
+        tasks = [
+            asyncio.create_task(get_items_to_buy_in_steam()),
+            asyncio.create_task(get_steam_cases_price())
+        ]
+        await asyncio.gather(*tasks)
 
 
 if __name__ == '__main__':

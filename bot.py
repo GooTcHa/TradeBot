@@ -27,7 +27,7 @@ async def check_trades():
             await client.accept_trades(trades['trades'])
             client.steam_client.commit_confirmation_list()
         logging.info(f'Trades of {client.login} was taken')
-        await asyncio.sleep(60)
+        await asyncio.sleep(120)
 
 
 #Getting steam balance and creating buy orders if balance > 20$
@@ -40,9 +40,9 @@ async def check_steam_balance():
         await client.delete_buy_orders(listings.keys())
         balance = await client.get_balance()
         if balance > 20:
-            await client.create_buy_orders(balance * 1000)
+            await client.create_buy_orders(balance * 100)
         logging.info(f'Balance of {client.login} was got')
-        await asyncio.sleep(86_400)
+        await asyncio.sleep(43_200)
 
 
 #Check tm balance and create cases buy order on tm
@@ -79,7 +79,7 @@ async def check_items_to_sell_on_tm():
         logging.info(f'Start checking items of {client.login} to sell on tm')
         await csgotm.create_new_listings_on_tm(client)
         logging.info(f'Finish checking items of {client.login} to sell on tm')
-        await asyncio.sleep(7_200)
+        await asyncio.sleep(3_600)
 
 
 #Check if sell price is close to current
@@ -102,10 +102,9 @@ async def check_tm_listings():
     logging.info(f'check_tm_listings of {client.login} lunched')
     while True:
         logging.info(f'Start checking tm listings of {client.login}')
-        await csgotm.get_history(client)
         await csgotm.check_listings(client)
         logging.info(f'Finish checking tm listings of {client.login}')
-        await asyncio.sleep(14_400)
+        await asyncio.sleep(3_600)
 
 
 #Get deals first on tm then on steam
@@ -120,7 +119,7 @@ async def check_deals():
         await asyncio.sleep(3_600)
 
 
-async def turn_on_sellings() -> None:
+async def turn_on_sales() -> None:
     logging.info(f'ping_pong of {client.login} lunched')
     await csgotm.ping_pong(client)
     await asyncio.sleep(150)
@@ -131,7 +130,7 @@ async def main():
     csgotm.app_storage['session'] = app_storage['session']
     csgotm.app_storage['proxy'] = config.proxis[login]['http']
     async with app_storage['session']:
-        tasks = [asyncio.create_task(turn_on_sellings()),
+        tasks = [asyncio.create_task(turn_on_sales()),
                  asyncio.create_task(check_trades()),
                  asyncio.create_task(check_cases_in_steam_inventory()),
                  asyncio.create_task(check_items_to_sell_on_tm()),

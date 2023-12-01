@@ -32,40 +32,5 @@ d = {'1': ['asd', 4],
 
 a = [{'a': 3}, {'a': 2}]
 b = [3, 1]
-#
-# a.sort(key=itemgetter('a'))
-# print(a)
 
-# i = 0
-# for i in range(i, 15):
-#     i -= 1
-#     print(i)
-
-
-async def a1():
-    while True:
-        print(1)
-        await asyncio.sleep(0.1)
-
-
-async def a2():
-    while True:
-        print(2)
-        time.sleep(1)
-            # await asyncio.sleep(0.1)
-
-
-async def main():
-    tasks = [
-        asyncio.create_task(a1()),
-        asyncio.create_task(a2())
-    ]
-    await asyncio.gather(*tasks)
-
-# asyncio.run(main())
-#
-# s = ','
-# s = s.replace(',', '.')
-# print(s)
-name = argv[1]
-print(name)
+print(int(2.999 / 3))

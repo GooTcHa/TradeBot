@@ -34,7 +34,11 @@ async def get_balance(client: SteamBot):
 
 async def delete_buy_orders(client: SteamBot):
     for case in config.containers:
-        url = f'https://market.csgo.com/api/v2/add-to-sale?key={client.tmApiKey}&id={case}&price={0}&cur=USD'
+        # url = f'https://market.csgo.com/api/v2/buy?key={client.tmApiKey}&hash_name={case}' \
+        #       f'&price=0'
+        url = f'https://market.csgo.com/api/v2/set-order?key={client.tmApiKey}' \
+              f'&market_hash_name={case}' \
+              f'&count=0'
         while True:
             async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
                 if response.status == 200:
@@ -114,7 +118,7 @@ async def get_items_to_buy(client: SteamBot):
                                     else:
                                         break
                                 if c >= 10:
-                                    items_to_check[item] = s / c
+                                    items_to_check[item] = min(s / c, answer['data'][item]['average'])
                         await client.get_steam_items_to_buy_info(items_to_check, items_to_buy)
                         items_to_check = {}
                     break

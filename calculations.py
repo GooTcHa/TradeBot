@@ -1,3 +1,4 @@
+import datetime
 import time
 
 import config
@@ -15,6 +16,29 @@ async def get_cases_ratio(steamCasesInfo: dict, tmCasesInfo: dict) -> dict:
             result[key] = [steamCasesInfo[key] / config.minCaseBuyingPrice, config.minCaseBuyingPrice,
                            steamCasesInfo[key]]
     return result
+
+
+async def get_average_item_steam_price(prices) -> float:
+    day = datetime.date.today() - datetime.timedelta(days=1)
+    week = datetime.date.today() - datetime.timedelta(days=4)
+    day_s = 0
+    week_s = 0
+    day_t = 0
+    week_t = 0
+    for price in prices:
+        arr = price[0].split(' ')
+        tDate = datetime.date(int(arr[2]), config.month[arr[0]], int(arr[1]))
+        if tDate >= day:
+            day_s += price[1]
+            week_s += price[1]
+            day_t += 1
+            week_t += 1
+        elif tDate >= week:
+            week_s += price[1]
+            week_t += 1
+        else:
+            break
+    return min(day_s / day_t, week_s / week_t)
 
 
 async def find_unique_items(items, listed_items):

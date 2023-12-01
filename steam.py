@@ -9,6 +9,8 @@ from steampy.models import Currency
 from steampy.client import SteamClient
 from steampy.utils import GameOptions
 import pickle
+
+import calculations
 import config
 import db
 from tgBot import send_message
@@ -79,11 +81,17 @@ class SteamBot:
             print(item)
             try:
                 response = self.steam_client.market.fetch_price(item, GameOptions.CS)
+                await asyncio.sleep(3)
+                history = self.steam_client.market.fetch_price_history(item, GameOptions.CS)
+                average_price = await calculations.get_average_item_steam_price(reversed(history['prices']))
+                print(average_price)
                 if response['success']:
                     if response.get('median_price') is not None:
                         price = float(response['median_price'].split(' ')[0].strip('$'))
                     else:
                         price = float(response['lowest_price'].split(' ')[0].strip('$'))
+                    price = min(price, average_price)
+                    print(price)
                     if price <= items[item]:
                         items_to_buy['ratio']['positive_ratio'][item] = price * 0.98
                     elif price * ratio <= items[item]:
@@ -93,58 +101,6 @@ class SteamBot:
             except Exception as ex:
                 print(f'Exeption {ex} in get_steam_cases_info')
             await asyncio.sleep(6)
-
-    async def accept_trades(self, trades):
-        await self.check_session()
-        steam_trades = self.steam_client.get_trade_offers()['response']['trade_offers_received']
-        await send_message(str(len(steam_trades)))
-        if len(steam_trades) != 0:
-            await asyncio.sleep(5)
-            for trade in trades:
-                for steam_trade in steam_trades:
-                    if int(trade['bot_id']) == steam_trade['accountid_other']:
-                        try:
-                            self.steam_client.accept_trade_offer(trade['trade_id'])
-                            await asyncio.sleep(2)
-                        except Exception as ex:
-                            print(f'Failed accepting trades {time.time()} -> {ex}')
-        print('trades were accepted')
-
-    async def get_steam_listings(self):
-        await self.check_session()
-        return self.steam_client.market.get_my_market_listings()
-
-    async def create_buy_orders(self, balance):
-        await self.check_session()
-        while True:
-            with open('items_to_buy.json') as f:
-                items = json.load(f)
-            if items['date'] > time.time() - 45_000:
-                break
-            else:
-                await asyncio.sleep(3_600)
-        price: int
-        for key in items['ratio'].keys():
-            for item in items['ratio'][key].keys():
-                count = await db.get_bought_item_count(item)
-                if count < 5:
-                    try:
-                        price = int(round(items['ratio'][key][item], 2) * 100)
-                        balance -= price * 5
-                        if balance < 0:
-                            break
-                        self.steam_client.market.create_buy_order(market_name=item,
-                                                                  price_single_item=str(price),
-                                                                  quantity=5 - count,
-                                                                  game=GameOptions.CS,
-                                                                  currency=Currency.USD)
-                    except Exception as ex:
-                        print(ex)
-                    await asyncio.sleep(1)
-
-    async def get_balance(self):
-        await self.check_session()
-        return float(self.steam_client.get_wallet_balance())
 
     async def get_max_steam_cases_price(self):
         await self.check_session()
@@ -173,6 +129,63 @@ class SteamBot:
         with open('steam_cases_ratio.json', 'wt') as f:
             json.dump(data_to_save, f, indent=4)
         return data_to_save
+
+    async def accept_trades(self, trades):
+        await self.check_session()
+        steam_trades = self.steam_client.get_trade_offers()['response']['trade_offers_received']
+        await send_message(str(len(steam_trades)))
+        if len(steam_trades) != 0:
+            await asyncio.sleep(5)
+            for trade in trades:
+                for steam_trade in steam_trades:
+                    if int(trade['bot_id']) == steam_trade['accountid_other']:
+                        try:
+                            self.steam_client.accept_trade_offer(trade['trade_id'])
+                            await asyncio.sleep(2)
+                        except Exception as ex:
+                            print(f'Failed accepting trades {time.time()} -> {ex}')
+        print('trades were accepted')
+
+    async def get_steam_listings(self):
+        await self.check_session()
+        return self.steam_client.market.get_my_market_listings()
+
+    async def create_buy_orders(self, balance: int):
+        await self.check_session()
+        while True:
+            with open('items_to_buy.json') as f:
+                items = json.load(f)
+            if items['date'] > time.time() - 45_000:
+                break
+            else:
+                await asyncio.sleep(3_600)
+        price: int
+        value = balance * 10
+        for key in items['ratio'].keys():
+            if value <= 0:
+                break
+            for item in items['ratio'][key].keys():
+                count = await db.get_bought_item_count(item)
+                if count < 5:
+                    try:
+                        price = int(round(items['ratio'][key][item], 2) * 100)
+                        if price <= balance:
+                            count = min(5 - count, int(balance / price))
+                            value -= price * count
+                            if value <= 0:
+                                break
+                            self.steam_client.market.create_buy_order(market_name=item,
+                                                                      price_single_item=str(price),
+                                                                      quantity=count,
+                                                                      game=GameOptions.CS,
+                                                                      currency=Currency.USD)
+                    except Exception as ex:
+                        print(ex)
+                    await asyncio.sleep(1)
+
+    async def get_balance(self):
+        await self.check_session()
+        return float(self.steam_client.get_wallet_balance())
 
     async def sell_cases_from_inventory(self):
         await self.check_session()
