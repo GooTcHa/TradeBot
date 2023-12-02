@@ -18,6 +18,27 @@ async def get_cases_ratio(steamCasesInfo: dict, tmCasesInfo: dict) -> dict:
     return result
 
 
+async def get_average_item_tm_price(history) -> float:
+    day = int(time.time()) - 87_000
+    week = int(time.time()) - 348_000
+    week_s = 0
+    day_s = 0
+    day_c = 0
+    week_c = 0
+    for deal in history:
+        if deal[0] >= day:
+            day_c += 1
+            week_c += 1
+            week_s += deal[1]
+            day_s += deal[1]
+        elif deal[0] >= week:
+            week_c += 1
+            week_s += deal[1]
+        else:
+            break
+    return (day_s / day_c + week_s / week_c) / 2.0
+
+
 async def get_average_item_steam_price(prices) -> float:
     day = datetime.date.today() - datetime.timedelta(days=1)
     week = datetime.date.today() - datetime.timedelta(days=4)
@@ -38,7 +59,7 @@ async def get_average_item_steam_price(prices) -> float:
             week_t += 1
         else:
             break
-    return (day_s * 0.6 / day_t + week_s * 0.4 / week_t) / 2.0
+    return (day_s / day_t + week_s / week_t) / 2.0
 
 
 async def find_unique_items(items, listed_items):

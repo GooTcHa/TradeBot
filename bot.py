@@ -52,7 +52,7 @@ async def check_tm_balance() -> None:
     while True:
         logging.info(f'Getting tm balance of {client.login}')
         balance = await csgotm.get_balance(client)
-        if balance >= 3:
+        if balance >= 0.5:
             await csgotm.buy_cases(client)
         else:
             await csgotm.delete_buy_orders(client)

@@ -118,7 +118,9 @@ async def get_items_to_buy(client: SteamBot):
                                     else:
                                         break
                                 if c >= 10:
-                                    items_to_check[item] = min(s / c, answer['data'][item]['average'])
+                                    average_price = await calculations.get_average_item_tm_price(
+                                        answer['data'][item]['history'])
+                                    items_to_check[item] = min(s / c, answer['data'][item]['average'], average_price)
                         await client.get_steam_items_to_buy_info(items_to_check, items_to_buy)
                         items_to_check = {}
                     break
@@ -192,9 +194,8 @@ async def create_case_buy_orders(client: SteamBot, cases: dict):
             try:
                 async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
                     if response.status == 200:
-                        answer = await response.json(content_type=None)
-                        if answer['success']:
-                            break
+                        # answer = await response.json(content_type=None)
+                        break
             except Exception as ex:
                 print(f'Error in creating buy case order: {ex}')
             await asyncio.sleep(1)
