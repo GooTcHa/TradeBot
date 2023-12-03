@@ -56,22 +56,19 @@ async def add_sale_info(account, market_hash_name: str, received: float) -> None
         async with db.execute('SELECT * FROM bought_items WHERE account="{0}" AND name="{1}" '
                               'AND time=(SELECT min(time) FROM bought_items WHERE name="{1}");'.format(account, market_hash_name)) as cur:
             item = await cur.fetchone()
-        if item is None:
-            item = [market_hash_name, account, received]
-        else:
+        if item is not None:
             await db.execute('DELETE FROM bought_items WHERE account="{0}" AND name="{1}" '
                              'AND time={2};'.format(account, market_hash_name, item[3]))
+            await db.execute('INSERT INTO history VALUES("{0}", "{1}", {2}, {3}, {4});'.format(
+                item[0], item[1], item[2], received, time.time()
+            ))
             await db.commit()
-        await db.execute('INSERT INTO history VALUES("{0}", "{1}", {2}, {3}, {4});'.format(
-            item[0], item[1], item[2], received, time.time()
-        ))
-        await db.commit()
 
 
 async def get_bought_item_count(market_hash_name: str) -> int:
     async with aiosqlite.connect('db_tables/db.db') as db:
         async with db.execute('SELECT COUNT(*) FROM bought_items WHERE name="{0}" AND '
-                              'time<{1};'.format(market_hash_name, time.time() - 172_800)) as cur:
+                              'time<{1};'.format(market_hash_name, time.time() - 345_600)) as cur:
             return (await cur.fetchone())[0]
 
 

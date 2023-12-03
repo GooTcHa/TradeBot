@@ -122,7 +122,7 @@ async def check_deals():
 async def turn_on_sales() -> None:
     logging.info(f'ping_pong of {client.login} lunched')
     await csgotm.ping_pong(client)
-    await asyncio.sleep(150)
+    await asyncio.sleep(180)
 
 
 async def main():

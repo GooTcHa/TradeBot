@@ -81,16 +81,15 @@ class SteamBot:
             print(item)
             try:
                 response = self.steam_client.market.fetch_price(item, GameOptions.CS)
-                await asyncio.sleep(3)
-                history = self.steam_client.market.fetch_price_history(item, GameOptions.CS)
-                average_price = await calculations.get_average_item_steam_price(reversed(history['prices']))
-                print(average_price)
+                # await asyncio.sleep(3)
+                # history = self.steam_client.market.fetch_price_history(item, GameOptions.CS)
+                # average_price = await calculations.get_average_item_steam_price(reversed(history['prices']))
+                # print(average_price)
                 if response['success']:
                     if response.get('median_price') is not None:
                         price = float(response['median_price'].split(' ')[0].strip('$'))
                     else:
                         price = float(response['lowest_price'].split(' ')[0].strip('$'))
-                    price = min(price, average_price)
                     print(price)
                     if price <= items[item]:
                         items_to_buy['ratio']['positive_ratio'][item] = price * 0.98
@@ -155,7 +154,7 @@ class SteamBot:
         while True:
             with open('items_to_buy.json') as f:
                 items = json.load(f)
-            if items['date'] > time.time() - 45_000:
+            if items['date'] > time.time() - 86_400:
                 break
             else:
                 await asyncio.sleep(3_600)
