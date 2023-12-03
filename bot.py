@@ -68,7 +68,7 @@ async def check_cases_in_steam_inventory():
         logging.info(f'Start checking cases in inventory of {client.login}')
         await client.sell_cases_from_inventory()
         logging.info(f'Cases in inventory of {client.login} was checked')
-        await asyncio.sleep(3_600)
+        await asyncio.sleep(1_800)
 
 
 #Create sell orders on tm
@@ -79,7 +79,7 @@ async def check_items_to_sell_on_tm():
         logging.info(f'Start checking items of {client.login} to sell on tm')
         await csgotm.create_new_listings_on_tm(client)
         logging.info(f'Finish checking items of {client.login} to sell on tm')
-        await asyncio.sleep(3_600)
+        await asyncio.sleep(600)
 
 
 #Check if sell price is close to current

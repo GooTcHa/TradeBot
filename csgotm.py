@@ -54,9 +54,9 @@ async def get_popular_tm_items():
     options.add_argument("--disable-blink-features=AutomationControlled")
     with webdriver.Chrome(options=options) as driver:
         urls = [
-            'https://market.csgo.com/en/?sort=profit&order=asc&priceMin=5&priceMax=30&rarity=Restricted&rarity=Covert&type=Pistol&type=Rifle&type=Sniper%20Rifle&type=SMG&type=Machinegun&type=Shotgun',
-            'https://market.csgo.com/en/?priceMin=5&priceMax=30&rarity=Restricted&rarity=Covert&type=Pistol&type=Rifle&type=Sniper%20Rifle&type=SMG&type=Machinegun&type=Shotgun',
-            'https://market.csgo.com/en/?sort=offers&order=desc&priceMin=5&priceMax=30&rarity=Restricted&rarity=Covert&type=Pistol&type=Rifle&type=Sniper%20Rifle&type=SMG&type=Machinegun&type=Shotgun'
+            'https://market.csgo.com/en/?sort=profit&order=asc&priceMin=1&priceMax=50&rarity=Restricted&rarity=Covert&type=Pistol&type=Rifle&type=Sniper%20Rifle&type=SMG&type=Machinegun&type=Shotgun',
+            'https://market.csgo.com/en/?priceMin=1&priceMax=50&rarity=Restricted&rarity=Covert&type=Pistol&type=Rifle&type=Sniper%20Rifle&type=SMG&type=Machinegun&type=Shotgun',
+            'https://market.csgo.com/en/?sort=offers&order=desc&priceMin=1&priceMax=50&rarity=Restricted&rarity=Covert&type=Pistol&type=Rifle&type=Sniper%20Rifle&type=SMG&type=Machinegun&type=Shotgun'
         ]
         for url in urls:
             driver.get(url)
@@ -108,7 +108,7 @@ async def get_items_to_buy(client: SteamBot):
                     cmpTime = int(time.time()) - 87_000
                     if answer['success'] and type(answer['data']) is dict:
                         for item in answer['data'].keys():
-                            if 4.0 < answer['data'][item]['average'] < 29.0:
+                            if 1.0 < answer['data'][item]['average'] < 49.0:
                                 c = 0
                                 s = 0
                                 for deal in answer['data'][item]['history']:

@@ -10,6 +10,7 @@ import requests
 # url = 'https://steamcommunity.com/market/itemordershistogram?country=BY&language=russian&currency=1&item_nameid=R8 Revolver | Fade (Field-Tested)&two_factor=0'
 # with requests.get(u) as result:
 #     print(result.text)
+import config
 import db
 
 month = {
@@ -31,6 +32,6 @@ d = {'1': ['asd', 4],
 }
 
 a = [{'a': 3}, {'a': 2}]
-b = [3, 1]
+b = (3, 1)
 
-print(int(2.999 / 3))
+print(b)
