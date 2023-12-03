@@ -24,12 +24,17 @@ app_storage = {}
 async def get_balance(client: SteamBot):
     url = f'https://market.csgo.com/api/v2/get-money?key={client.tmApiKey}'
     while True:
-        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
-            if response.status == 200:
-                answer = await response.json()
-                if answer["success"]:
-                    return answer['money']
-                await asyncio.sleep(10)
+        try:
+            async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
+                if response.status == 200:
+                    answer = await response.json()
+                    if answer["success"]:
+                        return answer['money']
+                    await asyncio.sleep(10)
+        except OSError as er:
+            await asyncio.sleep(2)
+        except Exception as ex:
+            await asyncio.sleep(2)
 
 
 async def delete_buy_orders(client: SteamBot):
@@ -40,11 +45,16 @@ async def delete_buy_orders(client: SteamBot):
               f'&market_hash_name={case}' \
               f'&count=0'
         while True:
-            async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
-                if response.status == 200:
-                    answer = await response.json()
-                    break
-            await asyncio.sleep(1)
+            try:
+                async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
+                    if response.status == 200:
+                        answer = await response.json()
+                        break
+                await asyncio.sleep(1)
+            except OSError as er:
+                await asyncio.sleep(2)
+            except Exception as ex:
+                await asyncio.sleep(2)
 
 
 async def get_popular_tm_items():
@@ -102,30 +112,35 @@ async def get_items_to_buy(client: SteamBot):
         for quality in config.quality:
             items_request += f'&list_hash_name[]={item_name + quality}'
         while True:
-            async with app_storage['session'].get(url=items_request) as response:
-                if response.status == 200:
-                    answer = await response.json()
-                    cmpTime = int(time.time()) - 87_000
-                    if answer['success'] and type(answer['data']) is dict:
-                        for item in answer['data'].keys():
-                            if 1.0 < answer['data'][item]['average'] < 49.0:
-                                c = 0
-                                s = 0
-                                for deal in answer['data'][item]['history']:
-                                    if deal[0] >= cmpTime:
-                                        c += 1
-                                        s += deal[1]
-                                    else:
-                                        break
-                                if c >= 10:
-                                    average_price = await calculations.get_average_item_tm_price(
-                                        answer['data'][item]['history'])
-                                    items_to_check[item] = min(s / c, answer['data'][item]['average'], average_price)
-                        await client.get_steam_items_to_buy_info(items_to_check, items_to_buy)
-                        items_to_check = {}
-                    break
-                else:
-                    await asyncio.sleep(1.5)
+            try:
+                async with app_storage['session'].get(url=items_request) as response:
+                    if response.status == 200:
+                        answer = await response.json()
+                        cmpTime = int(time.time()) - 87_000
+                        if answer['success'] and type(answer['data']) is dict:
+                            for item in answer['data'].keys():
+                                if 1.0 < answer['data'][item]['average'] < 49.0:
+                                    c = 0
+                                    s = 0
+                                    for deal in answer['data'][item]['history']:
+                                        if deal[0] >= cmpTime:
+                                            c += 1
+                                            s += deal[1]
+                                        else:
+                                            break
+                                    if c >= 10:
+                                        average_price = await calculations.get_average_item_tm_price(
+                                            answer['data'][item]['history'])
+                                        items_to_check[item] = min(s / c, answer['data'][item]['average'], average_price)
+                            await client.get_steam_items_to_buy_info(items_to_check, items_to_buy)
+                            items_to_check = {}
+                        break
+                    else:
+                        await asyncio.sleep(1.5)
+            except OSError as er:
+                await asyncio.sleep(2)
+            except Exception as ex:
+                await asyncio.sleep(2)
         await asyncio.sleep(2)
     with open('items_to_buy.json', 'wt') as f:
         items_to_buy['date'] = int(time.time())
@@ -142,6 +157,8 @@ async def get_trades(client: SteamBot):
                 if response.status == 200:
                     return await response.json()
                 await asyncio.sleep(3)
+        except OSError as er:
+            await asyncio.sleep(2)
         except Exception as ex:
             logging.error(f'Error while getting trades of {client.login}: ', exc_info=True)
             await asyncio.sleep(3)
@@ -227,61 +244,86 @@ async def create_listings_by_list(client: SteamBot, items: list):
 async def update_inventory(client: SteamBot) -> bool:
     url = f'https://market.csgo.com/api/v2/update-inventory?key={client.tmApiKey}'
     while True:
-        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
-            if response.status == 200:
-                if (await response.json())["success"]:
-                    return True
-            await asyncio.sleep(1)
+        try:
+            async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
+                if response.status == 200:
+                    if (await response.json())["success"]:
+                        return True
+                await asyncio.sleep(1)
+        except OSError as er:
+            await asyncio.sleep(2)
+        except Exception as ex:
+            await asyncio.sleep(2)
 
 
 async def get_unlisted_items(client: SteamBot):
     url = f'https://market.csgo.com/api/v2/my-inventory?key={client.tmApiKey}'
     items = []
     while True:
-        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
-            if response.status == 200:
-                answer = await response.json()
-                if answer["success"]:
-                    for i in answer['items']:
-                        if i['market_price'] > 4.0:
-                            items.append(i)
-                break
-        await asyncio.sleep(1)
+        try:
+            async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
+                if response.status == 200:
+                    answer = await response.json()
+                    if answer["success"]:
+                        for i in answer['items']:
+                            if i['market_price'] > 4.0:
+                                items.append(i)
+                    break
+            await asyncio.sleep(1)
+        except OSError as er:
+            await asyncio.sleep(2)
+        except Exception as ex:
+            await asyncio.sleep(2)
     return items
 
 
 async def get_listed_items(client: SteamBot):
+    url = f'https://market.csgo.com/api/v2/items?key={client.tmApiKey}'
     while True:
-        url = f'https://market.csgo.com/api/v2/items?key={client.tmApiKey}'
-        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
-            if response.status == 200:
-                answer = await response.json()
-                if answer["success"]:
-                    return await calculations.find_listed_items(answer['items'])
-        await asyncio.sleep(1)
+        try:
+            async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
+                if response.status == 200:
+                    answer = await response.json()
+                    if answer["success"]:
+                        return await calculations.find_listed_items(answer['items'])
+            await asyncio.sleep(1)
+        except OSError as er:
+            await asyncio.sleep(2)
+        except Exception as ex:
+            await asyncio.sleep(2)
 
 
 async def get_min_item_bid_price(client: SteamBot, market_name: str):
     url = f'https://market.csgo.com/api/v2/search-item-by-hash-name-specific?key={client.tmApiKey}&' \
           f'hash_name={market_name}'
     while True:
-        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
-            if response.status == 200:
-                answer = await response.json()
-                if answer["success"]:
-                    return answer['data'][0]['price']
-            await asyncio.sleep(1)
+        try:
+            async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
+                if response.status == 200:
+                    answer = await response.json()
+                    if answer["success"]:
+                        return answer['data'][0]['price']
+                await asyncio.sleep(1)
+        except OSError as er:
+            await asyncio.sleep(2)
+        except Exception as ex:
+            await asyncio.sleep(2)
 
 
 async def set_item_listing_price(client: SteamBot, item_id: str, price: int):
     url = f'https://market.csgo.com/api/v2/add-to-sale?key={client.tmApiKey}&id={item_id}&price={price - 1}&cur=USD'
     while True:
-        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
-            if response.status == 200:
-                answer = await response.json()
-                if answer["success"]:
-                    break
-        await asyncio.sleep(1)
+        try:
+            async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
+                if response.status == 200:
+                    answer = await response.json()
+                    if answer["success"]:
+                        break
+            await asyncio.sleep(1)
+        except OSError as er:
+            await asyncio.sleep(2)
+        except Exception as ex:
+            await asyncio.sleep(2)
 
 
 async def create_new_listings_on_tm(client: SteamBot):
@@ -306,17 +348,22 @@ async def check_listings(client: SteamBot):
 
 
 async def get_history(client: SteamBot) -> list:
+    url = f'https://market.csgo.com/api/v2/history?key={client.tmApiKey}'
     while True:
-        url = f'https://market.csgo.com/api/v2/history?key={client.tmApiKey}'
-        async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
-            if response.status == 200:
-                answer = await response.json()
-                if answer["success"]:
-                    history = []
-                    for deal in answer['data']:
-                        if deal['stage'] == '2':
-                            history.append(deal)
-                    return history
+        try:
+            async with app_storage['session'].get(url=url, proxy=app_storage['proxy']) as response:
+                if response.status == 200:
+                    answer = await response.json()
+                    if answer["success"]:
+                        history = []
+                        for deal in answer['data']:
+                            if deal['stage'] == '2':
+                                history.append(deal)
+                        return history
+        except OSError as er:
+            await asyncio.sleep(2)
+        except Exception as ex:
+            await asyncio.sleep(2)
 
 
 async def check_deals(client: SteamBot) -> None:
@@ -352,4 +399,4 @@ async def ping_pong(client: SteamBot) -> None:
                             break
                     await asyncio.sleep(3)
             except Exception as ex:
-                pass
+                await asyncio.sleep(3)
