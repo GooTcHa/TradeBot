@@ -104,7 +104,7 @@ async def check_tm_listings():
         logging.info(f'Start checking tm listings of {client.login}')
         await csgotm.check_listings(client)
         logging.info(f'Finish checking tm listings of {client.login}')
-        await asyncio.sleep(3_600)
+        await asyncio.sleep(1_200)
 
 
 #Get deals first on tm then on steam

@@ -25,6 +25,7 @@ async def get_items_to_buy_in_steam():
             await asyncio.sleep(3_600)
 
 
+#~75s.
 async def get_steam_cases_price() -> None:
     print('get_steam_cases_price')
     while True:
