@@ -267,8 +267,8 @@ class SteamBot:
                     f.write(keys_list[0])
                 break
             state = history[j].find('div', class_='market_listing_left_cell market_listing_gainorloss').text.strip()
-            while history[j].find('span', class_='market_listing_game_name').text != 'Counter-Strike 2' and (
-                    state == '' or state == ' '):
+            while history[j].find('span', class_='market_listing_game_name').text != 'Counter-Strike 2' or (
+                    state != '+' and state != '-'):
                 j += 1
                 state = history[j].find('div', class_='market_listing_left_cell market_listing_gainorloss').text.strip()
             price = history[j].find('span', class_='market_listing_price').text.strip().strip('+- $USD\n').replace(',', '.')
