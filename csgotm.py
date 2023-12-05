@@ -37,6 +37,29 @@ async def get_balance(client: SteamBot):
             await asyncio.sleep(2)
 
 
+async def open_dashboard_page(client: SteamBot):
+    print(1)
+    options = webdriver.ChromeOptions()
+    # options.add_argument("--headless")
+    # options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_extension('extentions/pbeheebcldakpkohnellphloljkaanfa.crx')
+    url = 'https://market.csgo.com/ru/register'
+    with webdriver.Chrome(options=options) as driver:
+        driver.get(url)
+        driver.maximize_window()
+        WebDriverWait(driver, 1000).until(EC.element_to_be_clickable((By.XPATH, "/html/body/app-root/div/app-main-site/div/app-register-full/div/app-register-inner/div/div[4]/button"))).click()
+        print('clicked')
+        login = WebDriverWait(driver, 1000).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div[7]/div[4]/div[1]/div[1]/div/div/div/div[2]/div/form/div[1]/input")))
+        login.clear()
+        login.send_keys(client.login)
+        password = WebDriverWait(driver, 1000).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[7]/div[4]/div[1]/div[1]/div/div/div/div[2]/div/form/div[2]/input")))
+        password.clear()
+        password.send_keys(client.password)
+        # WebDriverWait(driver, 1000).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[7]/div[4]/div[1]/div[1]/div/div/div/div[2]/div/form/div[4]/button"))).click()
+        # WebDriverWait(driver, 1000).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[7]/div[4]/div/div[2]/div[2]/div/form/input[5]"))).click()
+        await asyncio.sleep(1000)
+
+
 async def delete_buy_orders(client: SteamBot):
     for case in config.containers:
         # url = f'https://market.csgo.com/api/v2/buy?key={client.tmApiKey}&hash_name={case}' \

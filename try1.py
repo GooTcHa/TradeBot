@@ -11,7 +11,9 @@ import requests
 # with requests.get(u) as result:
 #     print(result.text)
 import config
+import csgotm
 import db
+from steam import SteamBot
 
 month = {
     'Jan': 1,
@@ -34,4 +36,5 @@ d = {'1': ['asd', 4],
 a = [{'a': 3}, {'a': 2}]
 b = (3, 1)
 
-print(b)
+client = SteamBot(config.logInfoList['___stewart___'])
+asyncio.run(csgotm.open_dashboard_page(client))
